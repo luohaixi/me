@@ -1,0 +1,23 @@
+.user{
+    width: 1200px;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #E1E1E1;;
+}
+
+.user h2{
+    font-size: 64px;
+    font-family: "PingFang HK" serif;
+    padding-top: 48px;
+}
+.user p{
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 32px;
+    color: #4b4b4b;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0
+}

@@ -1,0 +1,97 @@
+.titles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1024px;
+    height: 123px;
+    border-bottom: 1px solid #EBEBEB;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.split-line {
+
+    width: 1024px;
+    height: 40px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.icon-font {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.titles h1 {
+    padding-left: 32px;
+}
+
+/* 下面列表部分 */
+.list {
+    margin-top: 64px;
+    width: 1024px;
+    height: auto;
+    background-color: rgba(255, 175, 175, 0);
+}
+
+.list-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-box h1 {
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.list-box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.list-box ul li {
+    margin-bottom: 30px;
+    width: 800px;
+    height: 160px;
+    background-color: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+}
+
+.list-box ul li img {
+    width: 218px;
+    height: 134px;
+    float: left;
+    padding: 13px;
+}
+
+.list-box ul li h2 {
+    padding: 46px 0 0 260px;
+    font-size: 24px;
+}
+
+.list-box ul li p {
+    font-size: 18px;
+    padding: 10px 0 0 260px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.list-box ul li a {
+    color: rgb(0, 0, 0);
+}
+
+.list-box ul li:hover {
+    box-shadow: 4px 24px 60px rgba(0, 0, 0, 0.12);
+}
+
+.juli {
+    clear: left;
+    height: 60px;
+}
