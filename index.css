@@ -4,9 +4,15 @@
 }
 
 body {
-    background-color: #000000;
-    overflow-x: hidden;
     margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 1.5;
+    background: #000000;
+    letter-spacing: 0;
+    font-weight: 400;
 
 }
 
@@ -20,6 +26,11 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
 .top-menu ul {
     margin: 0;
     padding: 0;
@@ -31,7 +42,7 @@ body {
 .top-menu ul li {
 
     list-style: none;
-    padding: 0 40px 0 0;
+    padding: 0 0 0 40px;
 
 }
 
@@ -47,39 +58,40 @@ body {
 
 .top-menu ul li a:hover {
     font-weight: bold;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
     color: rgba(255, 255, 255, 1);
 }
 
 .top-menu ul li a:active {
     font-weight: bold;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
     color: rgba(255, 255, 255, 1);
 }
 
 
 /* section 主要内容 */
-.centrize{
-    display:flex;
-    justify-content: center;
-    align-items: stretch;
-}  
-.stared-centent {
-    height: 800px;
+.centrize {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.stared-centent {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .h-suntitle {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    display: block;
-    top: 50%;
-    left: 0;
-    width: 100%;
     font-size: 90px;
     line-height: 90px;
     font-weight: 500;
@@ -87,28 +99,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.h-title {
-    position: absolute;
-    margin: 0 0 5px 100px;
-    position: absolute;
-    left: calc(20%+35px);
-    font-size: 20px;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
 
-}
-
-/* .h-title{
-    margin: 0 0 5px 33px;
-    padding-right: 0;
-    position: relative;
-    left: 0;
-    top: 0;
-    bottom: auto;
-    max-width: 800px;
-    font-size: 44px;
-    
-} */
 .h-suntitle strong {
     color: #4bffa5;
 }
@@ -117,33 +108,97 @@ body {
     color: #4bffa5;
 }
 
+.h-title {
+    margin: 0;
+    position: absolute;
+    left: calc(20%+35px);
+    bottom: 50px;
+    max-width: 560px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
 
 /* footer */
 .footer {
     padding: 0;
     position: fixed;
-    bottom: 50px;
+    bottom: 40px;
     left: 50px;
     right: 50px;
-    width: 100%;
+    width: auto;
     height: 1px;
     z-index: 100;
 }
 
-.footer.copy {
+footer .copy {
     position: absolute;
     left: 0;
     bottom: 0;
     margin: 2px 0 0 0;
     font-size: 14px;
-    line-height: 2;
+    /* line-height: 2; */
     color: #bbb;
 }
 
-.footer.soc-box {
-    position: relative;
+.footer .soc-box {
+    position: absolute;
     right: 0;
     bottom: 0;
     float: right;
     width: 24px;
+}
+
+.follow-label {
+    padding-right: 75px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    color: #bbb;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    white-space: nowrap;
+    transform-origin: 100% 0;
+    text-align: right;
+    transform: rotate(90deg);
+
+}
+
+.follow-label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 1px;
+    background: #fff;
+}
+
+.footer .soc-box a {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer .soc a .icon {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.fab {
+    font-family: 'icomoon';
+}
+
+.fa-dribbble::after {
+    content: "\eaa7";
+}
+
+.fa-pinterest::after {
+    content: "\eaa7";
 }

@@ -1,4 +1,11 @@
-.titles{
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,28 +14,34 @@
     width: 1024px;
     height: 123px;
     border-bottom: 1px solid #EBEBEB;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
-.icon-font{
+
+.icon-font {
     width: 56px;
     height: 56px;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
-.titles h1{
+
+.titles h1 {
     padding-left: 32px;
 }
-.banner .head-nav{
+
+.banner .video-hd {
     width: 1024px;
     height: 580px;
+    border-radius: 20px;
+    margin: 64px 0 0 0;
     background-color: rgb(255, 255, 255);
-    margin-top: 64px;
 }
-video{
-    width:100%;
+
+video {
+    width: 100%;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.box-lettlo{
+
+.box-lettlo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,35 +49,40 @@ video{
     padding: 16px;
     width: 1056px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
-.box-lettlo>div{
+
+.box-lettlo>div {
     width: 240px;
     height: 240px;
     padding: 12px;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
-.main{
+
+.main {
     display: flex;
     flex-wrap: wrap;
     width: 1056px;
     padding: 16px;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
-.main>div{
+
+.main>div {
     border-radius: 10px;
     width: 320px;
     height: 240px;
     background-color: rgb(255, 255, 255);
     margin: 16px;
 }
-.main>div img{
+
+.main>div img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.fonts{
+
+.fonts {
     width: 1024px;
     height: 140px;
 }

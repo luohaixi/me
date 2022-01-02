@@ -38,11 +38,7 @@
     padding-top: 16px;
     padding-left: 16px;
  }
-.footer{
-    width: 100%;
-    position: absolute;
-    bottom: 0
-}
+
 .flex-container > div:hover{
     box-shadow: 4px 24px 60px rgba(0, 0, 0, 0.12);
  }  
