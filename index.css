@@ -120,9 +120,6 @@ body {
 
 /* footer */
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     padding: 0;
     position: fixed;
     bottom: 50px;
@@ -137,10 +134,6 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-}
-
-.footer p,
-footer.copy {
     margin: 2px 0 0 0;
     font-size: 14px;
     line-height: 2;
