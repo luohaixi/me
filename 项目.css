@@ -1,53 +1,76 @@
-.titles{
+.titles {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    width: 1024px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 800px;
     height: 123px;
     border-bottom: 1px solid #EBEBEB;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
-.icon-font{
+
+.icon-font {
     width: 56px;
     height: 56px;
     background-color: rgba(255, 255, 255，0);
 }
-.titles h1{
-    padding-left: 32px;
+
+.titles h1 {
+    font-size: 1.8em;
+    padding-left: 30px;
 }
-.flex-container{
+
+/* 主要内容 */
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
     display: flex;
     flex-wrap: wrap;
-    width: 1056px;
+    align-items: center;
+    width: 822px;
+    height: auto;
     padding-top: 48px;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(255, 182, 182, 0);
 
 }
-.flex-container > div {
-    width: 320px;
-    height: 254px;
+
+.card-container {
+    width: 254px;
+    height: 230px;
     border: 1px solid #ebebeb;
-    background: #fff;
+    background: rgb(255, 255, 255);
     box-sizing: border-box;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.03);
-    border-radius: 16px;
-    margin: 16px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 
 .card-container img {
-    width: 221px;
-    height: 97px;
-    padding: 16px;
+    width: 224px;
+    height: 132px;
+    padding: 14px;
 }
 
+.card-container .about {
+    padding: 0 14px;
+}
 
-/* .flex-container>div div {
-    padding-top: 16px;
-    padding-left: 16px;
- }
+.card-container h4 {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
 
-.flex-container > div:hover{
+.card-container p {
+    padding-top: 2px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.flex-container>div:hover {
     box-shadow: 4px 24px 60px rgba(0, 0, 0, 0.12);
- }  
+}

@@ -8,31 +8,36 @@
 body {
     height: auto;
     background: #FAFAFA;
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+
+
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 50px;
     background-color: rgb(255, 255, 255);
-    border-bottom: 0.5px solid #e9e9e9;
+    border-bottom: 0.5px solid #f3f3f3;
 }
 
 .head-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
-    margin: auto;
+    align-items: center;
+    padding: 20px 50px;
+    left: 0;
+    top: 0;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
-.h {
-    margin: auto;
-}
+
+
 
 .nav ul {
     margin: 0;
@@ -58,41 +63,64 @@ body {
 
 .nav ul li a:hover {
     font-weight: bold;
-    border-bottom: 3px solid #165DFF;
+    border-bottom: 2px solid #165DFF;
     color: #165dff;
-}
-
-.fonts p {
-    font-size: 20px;
-    padding-top: 60px;
 }
 
 /* 底部模块制作 */
 .footer {
-    clear: left;
-    height: 120px;
+    display: flex;
+    justify-content: center;
+    height: 260px;
     background-color: rgb(255, 255, 255);
-    padding-top: 30px;
+    padding: 0 50px;
     margin-top: 60px;
-    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-top: 0.5px solid #f3f3f3;
 }
 
-/* .footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-} */
-
-.mod_help {
-    float: right;
+.footer .mod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.mod_help dl dt {
+.footer p {
     font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
-.mod_help dl dt dd {
-    font-size: 14px;
+.bottom-th {
+    margin-bottom: 1rem;
 }
+
+.footer .mod ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer .mod ul li {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .03);
+    border-radius: 4px;
+}
+
+.list-inline {
+    margin: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline-item {
+    width: 10px;
+    height: 10px;
+    color: #000;
+    margin: 0;
+    display: inline-block;
+}
+
+.btn {}
