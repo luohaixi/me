@@ -34,7 +34,16 @@
     border-radius: 16px;
     margin: 16px;
 }
-.flex-container > div div{
+
+
+.card-container img {
+    width: 221px;
+    height: 97px;
+    padding: 16px;
+}
+
+
+/* .flex-container>div div {
     padding-top: 16px;
     padding-left: 16px;
  }
