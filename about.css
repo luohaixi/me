@@ -1,0 +1,32 @@
+.users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    left: 0;
+    top: 0;
+}
+
+.user-center {
+    width: 800px;
+    height: 800px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about {
+    padding: 10px 60px;
+}
+
+.users h2 {
+    font-size: 64px;
+    font-family: "PingFang HK"serif;
+    padding-top: 48px;
+}
+
+.users p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 32px;
+    color: #4b4b4b;
+}

@@ -94,6 +94,10 @@ body {
     margin-bottom: 1rem;
 }
 
+.footer .mod .mod-help {
+    /* font-weight: 300; */
+}
+
 .footer .mod ul {
     display: flex;
     flex-direction: row;
@@ -122,5 +126,3 @@ body {
     margin: 0;
     display: inline-block;
 }
-
-.btn {}
