@@ -74,7 +74,7 @@
     background: rgb(255, 255, 255);
     box-sizing: border-box;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.03);
-    border-radius: 14px;
+    border-radius: 0px;
 }
 
 .list-box ul li a {
