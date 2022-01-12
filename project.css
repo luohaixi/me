@@ -1,3 +1,7 @@
+.warp {
+    min-height: calc(100vh - 360px)
+}
+
 .titles {
     display: flex;
     flex-direction: row;
