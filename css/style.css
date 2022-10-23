@@ -74,8 +74,8 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 15px;
-    font-weight: normal;
-    line-height: 1.25;
+    /* font-weight: normal;
+    line-height: 1.25; */
 }
 
 h1 {
@@ -301,7 +301,7 @@ input[type="submit"]:hover,
 .woocommerce-page button.button.alt:hover,
 .woocommerce-page input.button.alt:hover,
 #jckqv .button:hover {
-/*    background: #2A2F35;
+    /*    background: #2A2F35;
     color: #ffffff; */
 }
 
@@ -712,11 +712,11 @@ body.enable-left-header .header-left-wrapper {
     position: fixed;
     top: 0;
     width: 300px;
-   padding-left: 30px;
+    padding-left: 30px;
     padding-right: 30px;
     /*  overflow-y: scroll; */
     z-index: 1000;
-   display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -904,7 +904,7 @@ header.left-side-header .logo-link.logo-text+.header-left-menu-toggle {
 }
 
 .header-left-menu-wrapper ul.header-left-menu li a:hover {
-/*    color: #2c99ed; */
+    /*    color: #2c99ed; */
 }
 
 .header-left-menu-wrapper ul.header-left-menu li ul a {
