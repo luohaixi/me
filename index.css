@@ -1,211 +1,53 @@
-* {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-family: "Greycliff Medium", "Helvetica Neue", Helvetica, sans-serif, "Roboto";
-    font-size: 14px;
-    line-height: 1.5;
-    background: #000000;
-    letter-spacing: 0;
-    font-weight: 400;
-
-}
-
-.header {
-    padding: 10px 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    left: 0;
-    top: 0;
-    background-color: #000000;
-}
-
-.header .logo {
-    display: flex;
-    align-items: center;
-}
-
-.top-menu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.top-menu ul li {
-
-    list-style: none;
-    padding: 0 0 0 40px;
-
-}
-
-.top-menu ul li a {
-    padding: 10px 0;
-    font-size: 1em;
-    line-height: 3.5;
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: 600;
-    /* opacity: 0.5; */
-    text-decoration: none;
-}
-
-.top-menu ul li a:hover {
-    font-weight: bold;
-    border-bottom: 2px solid #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-.top-menu ul li a:active {
-    font-weight: bold;
-    border-bottom: 2px solid #ffffff;
-    color: rgba(255, 255, 255, 1);
-}
-
-
-/* section 主要内容 */
-.centrize {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
-    background-image: linear-gradient(270deg, #131313 1px, transparent 0), linear-gradient(180deg, #131313 1px, transparent 0);
-    background-position: 100%, top;
-    background-size: 10px 10px;
-    border-bottom: 1px solid #1a1a1a;
-}
-
-.stared-centent {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.selector-for-some-widget {
+    box-sizing: content-box;
 }
 
 .h-suntitle {
-    font-size: 90px;
-    line-height: 90px;
-    font-weight: 500;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
+    font-size: 5em;
+    line-height: 1.3;
+    /* text-align: center; */
+    color: rgb(0, 0, 0);
 
+}
 
 .h-suntitle strong {
-    color: #4bffa5;
-    /* color: #165DFF; */
-}
-
-.h-title strong {
-    color: #4bffa5;
-    /* color: #165DFF; */
-}
-
-.h-title {
-    margin: 0;
-    position: absolute;
-    left: calc(20%+35px);
-    bottom: 50px;
-    max-width: 560px;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    word-break: break-word;
-    word-wrap: break-word;
+    color: #316cf5;
 }
 
 
-/* footer */
-.footer {
-    padding: 0;
-    position: fixed;
-    bottom: 40px;
-    left: 50px;
-    right: 50px;
-    width: auto;
-    height: 1px;
-    z-index: 100;
+/* 字体图标 */
+.nav-dribble {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-footer .copy {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: 2px 0 0 0;
-    font-size: 14px;
-    /* line-height: 2; */
-    color: #bbb;
+.dribble:last-child {
+    margin-left: 1rem;
 }
 
-.footer .soc-box {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    float: right;
-    width: 24px;
+.dribble {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.follow-label {
-    padding-right: 75px;
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    color: #bbb;
-    font-size: 14px;
-    line-height: 24px;
-    height: 24px;
-    white-space: nowrap;
-    transform-origin: 100% 0;
-    text-align: right;
-    transform: rotate(90deg);
-
-}
-
-.follow-label::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 50px;
-    height: 1px;
-    background: #fff;
-}
-
-.footer .soc-box a {
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #bbb;
-    text-decoration: none;
-}
-
-.footer .soc a .icon {
-    font-size: 18px;
-    color: #bbb;
+.icon {
+    padding: 6px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
 }
 
 .fab {
     font-family: 'icomoon';
 }
 
-.fa-dribbble::after {
-    content: "\eaa7";
+.icon-behance::after {
+    content: "\e900";
 }
 
-.fa-pinterest::after {
-    content: "\eaa7";
+.icon-github::after {
+    content: "\eab0";
 }
