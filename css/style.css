@@ -716,6 +716,7 @@ body.enable-left-header .header-left-wrapper {
     padding-right: 30px;
     /* overflow-y: scroll; */
     z-index: 1000;
+
     /* display: flex;
     flex-direction: column;
     justify-content: space-between; */
