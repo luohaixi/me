@@ -714,11 +714,11 @@ body.enable-left-header .header-left-wrapper {
     width: 300px;
     padding-left: 30px;
     padding-right: 30px;
-    /*  overflow-y: scroll; */
+    /* overflow-y: scroll; */
     z-index: 1000;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 body.enable-left-header .header-left-wrapper.header-color-style-dark {
@@ -777,7 +777,7 @@ header.left-side-header .logo-link.logo-text {
 }
 
 header.left-side-header .header-left-logo {
-    margin: 15px 0 15px;
+    margin: 15px 0 50px;
 }
 
 header.left-side-header .header-left-search {

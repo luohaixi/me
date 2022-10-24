@@ -4407,6 +4407,10 @@ fieldset:disabled .btn {
     }
 }
 
+.h-suntitle {
+    font-size: 3em;
+}
+
 .navbar-toggler:hover {
     text-decoration: none
 }
@@ -4437,6 +4441,10 @@ fieldset:disabled .btn {
     .navbar-expand-sm {
         flex-wrap: nowrap;
         justify-content: flex-start
+    }
+
+    .h-suntitle {
+        font-size: 4em;
     }
 
     .navbar-expand-sm .navbar-nav {
@@ -4495,6 +4503,11 @@ fieldset:disabled .btn {
         flex-wrap: nowrap;
         justify-content: flex-start
     }
+
+    .h-suntitle {
+        font-size: 5em;
+    }
+
 
     .navbar-expand-md .navbar-nav {
         flex-direction: row
@@ -4609,6 +4622,7 @@ fieldset:disabled .btn {
         flex-wrap: nowrap;
         justify-content: flex-start
     }
+
 
     .navbar-expand-xl .navbar-nav {
         flex-direction: row
