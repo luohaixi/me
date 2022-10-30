@@ -113,7 +113,16 @@
             </div>
         </div>
     </header>
-
+    <!-- 渐变背景 -->
+    <div class="canvas w-embed"><canvas id="canv" width="32" height="32">
+            <style>
+                canvas {
+                    width: 100%;
+                    height: 100vh;
+                }
+            </style>
+        </canvas>
+    </div>
     <div class="px-3 content-block stick-to-footer d-flex align-items-center justify-content-center"
         style="height:100vh;">
 
@@ -121,12 +130,12 @@
         <section class="px-lg-5 modal-xl">
             <div class="container" style="max-width:1200px !important;">
                 <div class="h-suntitle py-5">
-                    Hello！ <br>I’m <strong><span class="#" data-toggle="typed"
-                            data-options='{"strings": ["Motion Designer", "UI/UX Designer", "3D Designer"]}'></span></strong>
+                    Hello！ <br>I’m <span class="#" data-toggle="typed"
+                        data-options='{"strings": ["Motion Designer", "UI/UX Designer", "3D Designer"]}'></span>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6  mb-4">
-                        <div class="card h-100 bg-light">
+                        <div class="card h-100 elemen-card">
                             <div class="card-body ">
                                 <div class="d-flex justify-content-between" onclick="window.location='blog.html'">
                                     <div class="h4 card-title mb-3">学习沉淀</div>
@@ -164,7 +173,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6  d-grid">
-                        <div class="card mb-4 bg-light">
+                        <div class="card mb-4 elemen-card">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <div class="d-flex justify-content-between" onclick="window.location='portfolio.html'">
                                     <div class="h4 card-title">专业设计</div>
@@ -183,7 +192,7 @@
                                 <!-- <a href="portfolio.html" class="btn btn-primary">Go somewhere</a> -->
                             </div>
                         </div>
-                        <div class="card mb-4 bg-light">
+                        <div class="card mb-4 elemen-card">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <div class="d-flex justify-content-between" onclick="window.location='about.html'">
                                     <div class="h4 card-title">未来发展</div>
@@ -203,7 +212,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 d-grid">
-                        <div class="card mb-4 bg-light">
+                        <div class="card mb-4 elemen-card">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <div class="d-flex justify-content-between" onclick="window.location='portfolio.html'">
                                     <div class="h4 card-title">专业设计</div>
@@ -222,7 +231,7 @@
                                 <!-- <a href="portfolio.html" class="btn btn-primary">Go somewhere</a> -->
                             </div>
                         </div>
-                        <div class="card mb-4 bg-light">
+                        <div class="card mb-4 elemen-card">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <div class="d-flex justify-content-between" onclick="window.location='about.html'">
                                     <div class="h4 card-title">未来发展</div>
@@ -321,6 +330,9 @@
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
 
+    <!-- 渐变背景 -->
+    <script src="assets/js/canv.js"></script>
+
     <script>
         (function ($) {
             $(document).ready(function () {
@@ -331,6 +343,7 @@
             });
         })(jQuery);
     </script>
+
 
 
 </body>
