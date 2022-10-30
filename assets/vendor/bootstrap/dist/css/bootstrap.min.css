@@ -5509,11 +5509,11 @@ fieldset:disabled .btn {
     --bs-list-group-border-radius: 0.5em;
     --bs-list-group-item-padding-x: 1em;
     --bs-list-group-item-padding-y: 0.5em;
-    --bs-list-group-action-color: #495057;
+    --bs-list-group-action-color: rgba(0, 0, 0, .05);
     --bs-list-group-action-hover-color: #495057;
-    --bs-list-group-action-hover-bg: #efefef;
-    --bs-list-group-action-active-color: #212529;
-    --bs-list-group-action-active-bg: #e9ecef;
+    --bs-list-group-action-hover-bg: rgba(0, 0, 0, .05);
+    --bs-list-group-action-active-color: rgba(0, 0, 0, .05);
+    --bs-list-group-action-active-bg: rgba(0, 0, 0, .05);
     --bs-list-group-disabled-color: #6c757d;
     --bs-list-group-disabled-bg: #fff;
     --bs-list-group-active-color: #fff;
