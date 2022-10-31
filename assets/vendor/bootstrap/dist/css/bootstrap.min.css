@@ -4411,6 +4411,10 @@ fieldset:disabled .btn {
     font-size: 3em;
 }
 
+.header-title{
+    font-size: 6em;
+}
+
 .navbar-toggler:hover {
     text-decoration: none
 }
@@ -4445,6 +4449,10 @@ fieldset:disabled .btn {
 
     .h-suntitle {
         font-size: 4em;
+    }
+
+    .header-title{
+        font-size: 6em;
     }
 
     .navbar-expand-sm .navbar-nav {
@@ -4508,6 +4516,9 @@ fieldset:disabled .btn {
         font-size: 5em;
     }
 
+    .header-title{
+        font-size: 8em;
+    }
 
     .navbar-expand-md .navbar-nav {
         flex-direction: row
