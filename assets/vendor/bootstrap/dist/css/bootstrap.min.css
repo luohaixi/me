@@ -4412,7 +4412,7 @@ fieldset:disabled .btn {
 }
 
 .header-title {
-    font-size: 6em;
+    font-size: 3em;
 }
 
 .navbar-toggler:hover {
@@ -4452,7 +4452,7 @@ fieldset:disabled .btn {
     }
 
     .header-title {
-        font-size: 6em;
+        font-size: 3em;
     }
 
     .navbar-expand-sm .navbar-nav {
@@ -4517,7 +4517,7 @@ fieldset:disabled .btn {
     }
 
     .header-title {
-        font-size: 8em;
+        font-size: 3em;
     }
 
     .navbar-expand-md .navbar-nav {
