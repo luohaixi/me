@@ -4815,7 +4815,7 @@ fieldset:disabled .btn {
     --bs-card-title-spacer-y: 0.5em;
     --bs-card-border-width: 1px;
     --bs-card-border-color: var(--bs-border-color-translucent);
-    --bs-card-border-radius: 0.5em;
+    --bs-card-border-radius: 1em;
     --bs-card-box-shadow: ;
     --bs-card-inner-border-radius: calc(0.375em - 1px);
     --bs-card-cap-padding-y: 0.5em;
