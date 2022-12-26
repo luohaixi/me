@@ -22,10 +22,19 @@
 }
 
 .elemen-card {
-    backdrop-filter: saturate(180%) blur(60px);
-    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: saturate(180%) blur(6px);
+    background: rgba(0, 0, 0, 0.03);
     /* border-radius: 0px; */
     border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: .3s cubic-bezier(.165, .84, .44, 1);
+}
+
+.hero-section {
+    transition: .3s cubic-bezier(.165, .84, .44, 1);
+}
+
+.hero-section:hover {
+    transform: translateY(-0.5rem);
     transition: .3s cubic-bezier(.165, .84, .44, 1);
 }
 
@@ -70,4 +79,67 @@
 
 .icon-github::after {
     content: "\eab0";
+}
+
+/* 背景线条 */
+
+.viewer-type-vertical.mag .mag-pages-container .container .page .content-scroll-wrapper {
+    overflow: hidden;
+}
+
+.mag .mag-pages-container .container .page .content-scroll-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mag .mag-pages-container .container .page .content-scroll-wrapper .content-bounds {
+    position: absolute;
+    overflow: hidden;
+}
+
+.mag .mag-pages-container .container .page .content-scroll-wrapper .content-bounds .page-content-container {
+    position: relative;
+    overflow: visible;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    outline: 0;
+}
+
+.animation-container {
+    position: absolute;
+    pointer-events: none !important;
+}
+
+.isdesktop .rmwidget.widget-picture {
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+
+.rmwidget.widget-picture.svg {
+    pointer-events: none;
+}
+
+.rmwidget {
+    position: absolute;
+}
+
+.rmwidget.widget-picture .svg-scale-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.rmwidget.widget-picture div {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content-bounds {
+    position: absolute;
+    overflow: hidden;
 }

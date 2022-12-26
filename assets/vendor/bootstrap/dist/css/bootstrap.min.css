@@ -4817,7 +4817,7 @@ fieldset:disabled .btn {
     --bs-card-border-color: var(--bs-border-color-translucent);
     --bs-card-border-radius: 1em;
     --bs-card-box-shadow: ;
-    --bs-card-inner-border-radius: calc(0.375em - 1px);
+    --bs-card-inner-border-radius: calc(1em - 1px);
     --bs-card-cap-padding-y: 0.5em;
     --bs-card-cap-padding-x: 1em;
     --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
