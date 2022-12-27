@@ -36,6 +36,7 @@
 .hero-section:hover {
     transform: translateY(-0.5rem);
     transition: .3s cubic-bezier(.165, .84, .44, 1);
+    /* box-shadow: 0 7px 16px 0 rgb(0 0 0 / 8%); */
 }
 
 .h-suntitle span {
