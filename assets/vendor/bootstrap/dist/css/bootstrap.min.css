@@ -209,7 +209,7 @@ address {
 
 ol,
 ul {
-    padding-left: 1em
+    padding-left: 0em
 }
 
 dl,
@@ -5532,7 +5532,7 @@ fieldset:disabled .btn {
     --bs-list-group-active-border-color: #0d6efd;
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    /* padding-left: 0; */
     margin-bottom: 0;
     border-radius: var(--bs-list-group-border-radius)
 }
