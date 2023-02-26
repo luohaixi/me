@@ -144,3 +144,10 @@
     position: absolute;
     overflow: hidden;
 }
+
+.bg-6 {
+    background-color: #f3f3f3;
+}
+.bg-7 {
+    background-color: #e8e8e8;
+}
