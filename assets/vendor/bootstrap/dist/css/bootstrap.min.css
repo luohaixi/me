@@ -31,6 +31,7 @@
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
     --bs-primary: #0d6efd;
+    --bs-pink: #DF3375;
     --bs-secondary: #6c757d;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -39,6 +40,7 @@
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
     --bs-primary-rgb: 13, 110, 253;
+    --bs-pink-rgb: 223, 51, 117;
     --bs-secondary-rgb: 108, 117, 125;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
@@ -52,7 +54,8 @@
     --bs-body-bg-rgb: 255, 255, 255;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-gradient: linear-gradient(-45deg, rgb(179, 0, 255, 1), rgba(255, 255, 255, 0));
+    --bs-blue: linear-gradient(-45deg, rgb(107, 42, 245, 1), rgba(255, 255, 255, 0));
     --bs-body-font-family: var(--bs-font-sans-serif);
     --bs-body-font-size: 1em;
     --bs-body-font-weight: 400;
@@ -61,7 +64,9 @@
     --bs-body-bg: #fff;
     --bs-border-width: 1px;
     --bs-border-style: solid;
+    --bs-border-style-dotted: dashed;
     --bs-border-color: #dee2e6;
+    --bs-border-color-1: rgba(255, 255, 255, 0.3);
     --bs-border-color-translucent: rgba(0, 0, 0, 0.08);
     --bs-border-radius: 0.5em;
     --bs-border-radius-sm: 0.25em;
@@ -8241,6 +8246,10 @@ fieldset:disabled .btn {
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important
 }
 
+.border-bottom-white {
+    border-bottom: var(--bs-border-width) var(--bs-border-style-dotted) var(--bs-border-color-1) !important
+}
+
 .border-bottom-0 {
     border-bottom: 0 !important
 }
@@ -9209,6 +9218,11 @@ fieldset:disabled .btn {
     background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important
 }
 
+.bg-pink {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-pink-rgb), var(--bs-bg-opacity)) !important
+}
+
 .bg-secondary {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important
@@ -9286,6 +9300,9 @@ fieldset:disabled .btn {
 
 .bg-gradient {
     background-image: var(--bs-gradient) !important
+}
+.bg-blue {
+    background-image: var(--bs-blue) !important
 }
 
 .user-select-all {
