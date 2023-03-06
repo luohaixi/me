@@ -4518,7 +4518,7 @@ fieldset:disabled .btn {
     }
 
     .h-suntitle {
-        font-size: 6em;
+        font-size: 5em;
     }
 
     .header-title {
@@ -9301,6 +9301,7 @@ fieldset:disabled .btn {
 .bg-gradient {
     background-image: var(--bs-gradient) !important
 }
+
 .bg-blue {
     background-image: var(--bs-blue) !important
 }
