@@ -23,9 +23,9 @@
 
 .elemen-card {
     backdrop-filter: saturate(180%) blur(6px);
-    background: rgba(255, 255, 255, 0.50);
+    background: #fafafa;
     /* border-radius: 0px; */
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     transition: .3s cubic-bezier(.165, .84, .44, 1);
 }
 
