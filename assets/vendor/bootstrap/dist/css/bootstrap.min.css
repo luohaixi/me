@@ -4815,8 +4815,8 @@ fieldset:disabled .btn {
 }
 
 .card {
-    --bs-card-spacer-y: 1em;
-    --bs-card-spacer-x: 1em;
+    --bs-card-spacer-y: 1.5em;
+    --bs-card-spacer-x: 1.5em;
     --bs-card-title-spacer-y: 0.5em;
     --bs-card-border-width: 1px;
     --bs-card-border-color: var(--bs-border-color-translucent);
@@ -5523,7 +5523,7 @@ fieldset:disabled .btn {
     --bs-list-group-border-color: rgba(0, 0, 0, 0.125);
     --bs-list-group-border-width: 1px;
     --bs-list-group-border-radius: 0.5em;
-    --bs-list-group-item-padding-x: 1em;
+    --bs-list-group-item-padding-x: 0.5em;
     --bs-list-group-item-padding-y: 0.5em;
     --bs-list-group-action-color: rgba(0, 0, 0, .05);
     --bs-list-group-action-hover-color: #495057;

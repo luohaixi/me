@@ -59,6 +59,106 @@
     <link rel="stylesheet" id="barrel-fonts-css"
         href="http://fonts.googleapis.com/css?family=Titillium+Web%3A300%2C400%2C500%26subset%3Dlatin%7CNunito%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%26subset%3Dlatin%7CRoboto%3A300%2C400%2C600%26subset%3Dlatin&amp;ver=1.0"
         type="text/css" media="all" />
+    <style>
+        .intro_intro__BfS_1 {
+            position: relative;
+        }
+
+        .intro_gridLineTop__dOmmt:before {
+            content: "";
+            position: absolute;
+            width: calc(100% + var(--line-offset));
+            left: calc(var(--line-offset) / 2 * -1);
+            height: var(--line-width);
+            background: linear-gradient(to right, var(--line-color), var(--line-color) 50%, transparent 0, transparent);
+            background-size: var(--line-gap) var(--line-width);
+            -webkit-mask: linear-gradient(to left, var(--geist-background) var(--line-fade-stop), transparent), linear-gradient(to right, var(--geist-background) var(--line-fade-stop), transparent), linear-gradient(#000, #000);
+            -webkit-mask-composite: destination-in;
+            mask-composite: exclude;
+        }
+
+        .intro_gridLineTop__dOmmt:after {
+            content: "";
+            position: absolute;
+            width: calc(100% + var(--line-offset));
+            left: calc(var(--line-offset) / 2 * -1);
+            height: var(--line-width);
+            background: linear-gradient(to right, var(--line-color), var(--line-color) 50%, transparent 0, transparent);
+            background-size: var(--line-gap) var(--line-width);
+            -webkit-mask: linear-gradient(to left, var(--geist-background) var(--line-fade-stop), transparent), linear-gradient(to right, var(--geist-background) var(--line-fade-stop), transparent), linear-gradient(#000, #000);
+            -webkit-mask-composite: destination-in;
+            mask-composite: exclude;
+        }
+
+        .home_root__RipZg {
+            --container-padding-x: 16px;
+            --line-opacity: 0.15;
+            --line-color: rgba(0, 0, 0, var(--line-opacity));
+            --line-offset: 120px;
+            --line-width: 1px;
+            --line-gap: 5px;
+            --line-fade-stop: 93%;
+            --geist-background: #fff;
+        }
+
+        .intro_gridContainerLine__hTFTB {
+            position: absolute;
+            width: var(--line-width);
+            height: 100%;
+            top: 0;
+            background: linear-gradient(180deg, var(--line-color), var(--line-color) 50%, transparent 0, transparent);
+            background-size: var(--line-width) var(--line-gap);
+
+        }
+
+        .intro_gridContainerLine__hTFTB[data-offset] {
+            height: calc(100% + var(--line-offset));
+            top: calc(var(--line-offset) / 2.5 * -1);
+        }
+
+        .intro_gridContainerLine__hTFTB[data-fade=true] {
+            -webkit-mask-composite: destination-in;
+            mask-composite: exclude;
+            -webkit-mask: linear-gradient(to top, var(--geist-background) var(--line-fade-stop), transparent), linear-gradient(to bottom, var(--geist-background) var(--line-fade-stop), transparent), linear-gradient(#000, #000);
+        }
+
+        .intro_gridContainerLine__hTFTB[data-side=right] {
+            right: 0;
+        }
+
+        .intro_gridCircle__GBR1I[data-side=top-left] {
+            top: calc(var(--size) / 2 * -1);
+            left: calc(var(--size) / 2 * -1 + var(--offset));
+            --size: 60px;
+            --offset: 0px;
+            width: var(--size);
+            height: var(--size);
+            position: absolute;
+            z-index: 2;
+        }
+
+        .intro_root__Buvm4 .intro_gridCircle__GBR1I {
+            opacity: 0;
+            animation: intro_opacity__nyUpj var(--a-duration-half) var(--a-easing) forwards;
+            animation-delay: calc(var(--a-delay) + .4s);
+        }
+
+        .intro_gridCircle__GBR1I[data-side=bottom-right] {
+            bottom: calc(var(--size) / 2 * -1);
+            right: calc(var(--size) / 2 * -1 + var(--offset));
+            transform: rotate(180deg);
+            --size: 60px;
+            --offset: 0px;
+            width: var(--size);
+            height: var(--size);
+            position: absolute;
+            z-index: 2;
+        }
+
+        .intro_root__Buvm4 .intro_gridContainerLine__hTFTB {
+            --line-color: rgba(0, 0, 0, calc(var(--line-opacity) * 6));
+        }
+    </style>
 </head>
 
 
@@ -205,12 +305,58 @@
         <!-- 展示主体 -->
         <section class="px-lg-5 modal-xl">
             <div class="container" style="max-width:960px !important;">
-                <div class="h-suntitle pb-3">
-                    Hello！ <br>I’m <span class="#" data-toggle="typed"
-                        data-options='{"strings": ["Motion Designer", "UI/UX Designer", "3D Designer"]}'></span>
+
+                <div class="h-suntitle mb-3">
+                    <div class="intro_intro__BfS_1 intro_gridLineTop__dOmmt home_root__RipZg">
+                        <svg aria-hidden="true" class="intro_gridCircle__GBR1I" data-side="top-left" fill="none"
+                            height="75" viewBox="0 0 75 75" width="75">
+                            <path
+                                d="M74 37.5C74 30.281 71.8593 23.2241 67.8486 17.2217C63.838 11.2193 58.1375 6.541 51.4679 3.7784C44.7984 1.0158 37.4595 0.292977 30.3792 1.70134C23.2989 3.1097 16.7952 6.58599 11.6906 11.6906C6.58599 16.7952 3.1097 23.2989 1.70134 30.3792C0.292977 37.4595 1.0158 44.7984 3.7784 51.4679C6.541 58.1375 11.2193 63.838 17.2217 67.8486C23.2241 71.8593 30.281 74 37.5 74"
+                                opacity="var(--line-opacity)" stroke="url(#paint0_angular_25_2122)"
+                                stroke-dasharray="2 2"></path>
+                            <defs>
+                                <radialGradient cx="0" cy="0"
+                                    gradientTransform="translate(37.5 37.5) rotate(90) scale(36.5)"
+                                    gradientUnits="userSpaceOnUse" id="paint0_angular_25_2122" r="1">
+                                    <stop></stop>
+                                    <stop offset="0.5" stop-opacity="0.34"></stop>
+                                    <stop offset="1"></stop>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <div aria-hidden="true" class="intro_gridContainerLine__hTFTB" data-fade="true"
+                            data-offset="true" data-side="left"></div>
+                        <div aria-hidden="true" class="intro_gridContainerLine__hTFTB" data-fade="true"
+                            data-offset="true" data-side="right"></div>
+                        <svg aria-hidden="true" class="intro_gridCircle__GBR1I" data-side="bottom-right" fill="none"
+                            height="75" viewBox="0 0 75 75" width="75">
+                            <path
+                                d="M74 37.5C74 30.281 71.8593 23.2241 67.8486 17.2217C63.838 11.2193 58.1375 6.541 51.4679 3.7784C44.7984 1.0158 37.4595 0.292977 30.3792 1.70134C23.2989 3.1097 16.7952 6.58599 11.6906 11.6906C6.58599 16.7952 3.1097 23.2989 1.70134 30.3792C0.292977 37.4595 1.0158 44.7984 3.7784 51.4679C6.541 58.1375 11.2193 63.838 17.2217 67.8486C23.2241 71.8593 30.281 74 37.5 74"
+                                opacity="var(--line-opacity)" stroke="url(#paint0_angular_25_2122)"
+                                stroke-dasharray="2 2"></path>
+                            <defs>
+                                <radialGradient cx="0" cy="0"
+                                    gradientTransform="translate(37.5 37.5) rotate(90) scale(36.5)"
+                                    gradientUnits="userSpaceOnUse" id="paint0_angular_25_2122" r="1">
+                                    <stop></stop>
+                                    <stop offset="0.5" stop-opacity="0.34"></stop>
+                                    <stop offset="1"></stop>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <div class="ms-1"> Hello！ <br>I’m
+                            <span class="#" data-toggle="typed"
+                                data-options='{"strings": ["Motion Designer", "UI/UX Designer", "3D Designer"]}'>
+                            </span>
+                        </div>
+                        <div aria-hidden="true" class="intro_gridContainerLine__hTFTB" data-fade="true"
+                            data-offset="true" data-side="left"></div>
+                    </div>
+
+
                 </div>
                 <div class="row">
-                    <div class="col-lg-5 col-sm-4  mb-4">
+                    <div class="col-lg-5 col-sm-4 mb-4">
                         <div class="card h-100 elemen-card hero-section">
                             <div class="card-body ">
                                 <div class="d-flex justify-content-between" onclick="window.location='blog.html'">
@@ -242,7 +388,6 @@
                                         onclick="window.location='作用及意义.html'"> 动效设计的作用及意义</li>
                                     <!-- <li class="list-group-item list-group-item-action d-xs-none d-none d-md-block"
                                         onclick="window.location='动效落地.html'"> 常见的动效设计落地方案</li> -->
-
                                 </ol>
                             </div>
                         </div>
@@ -294,31 +439,25 @@
                                             fill="#212529" p-id="7982"></path>
                                     </svg>
                                 </div>
-
                                 <p class="card-text">With supporting text below as a natural.
                                 </p>
                                 <!-- <a href="portfolio.html" class="btn btn-primary">Go somewhere</a> -->
                             </div>
                         </div>
+
                         <div class="card mb-4 elemen-card hero-section">
                             <div class="card-body d-flex flex-column justify-content-between"
                                 onclick="ShowDiv('MyDiv','fade')">
                                 <div class="d-flex justify-content-between">
-                                    <div class="h4 card-title">个人探索</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-4 elemen-card hero-section">
-                            <div class="card-body d-flex flex-column justify-content-between"
-                                onclick="ShowDiv('MyDiv','fade')">
-                                <div class="d-flex justify-content-between">
-                                    <div class="h4 card-title">About me</div>
+                                    <div class="h4 card-title"> </div>
                                     <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12C1.5 11.8011 1.57902 11.6103 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25H19.9395L15.219 6.531C15.0782 6.39017 14.9991 6.19916 14.9991 6C14.9991 5.80084 15.0782 5.60983 15.219 5.469C15.3598 5.32817 15.5508 5.24905 15.75 5.24905C15.9492 5.24905 16.1402 5.32817 16.281 5.469L22.281 11.469C22.3508 11.5387 22.4063 11.6214 22.4441 11.7126C22.4819 11.8037 22.5013 11.9013 22.5013 12C22.5013 12.0987 22.4819 12.1963 22.4441 12.2875C22.4063 12.3786 22.3508 12.4613 22.281 12.531L16.281 18.531C16.1402 18.6718 15.9492 18.7509 15.75 18.7509C15.5508 18.7509 15.3598 18.6718 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8008 15.0782 17.6098 15.219 17.469L19.9395 12.75H2.25C2.05109 12.75 1.86032 12.671 1.71967 12.5303C1.57902 12.3897 1.5 12.1989 1.5 12Z" fill="black"/>
-                                        </svg> -->
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12C1.5 11.8011 1.57902 11.6103 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25H19.9395L15.219 6.531C15.0782 6.39017 14.9991 6.19916 14.9991 6C14.9991 5.80084 15.0782 5.60983 15.219 5.469C15.3598 5.32817 15.5508 5.24905 15.75 5.24905C15.9492 5.24905 16.1402 5.32817 16.281 5.469L22.281 11.469C22.3508 11.5387 22.4063 11.6214 22.4441 11.7126C22.4819 11.8037 22.5013 11.9013 22.5013 12C22.5013 12.0987 22.4819 12.1963 22.4441 12.2875C22.4063 12.3786 22.3508 12.4613 22.281 12.531L16.281 18.531C16.1402 18.6718 15.9492 18.7509 15.75 18.7509C15.5508 18.7509 15.3598 18.6718 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8008 15.0782 17.6098 15.219 17.469L19.9395 12.75H2.25C2.05109 12.75 1.86032 12.671 1.71967 12.5303C1.57902 12.3897 1.5 12.1989 1.5 12Z" fill="black"/>
+                                            </svg> -->
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
