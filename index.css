@@ -148,6 +148,15 @@
 .bg-6 {
     background-color: #f3f3f3;
 }
+
 .bg-3 {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-4 {
+    background-color: #FCF9FF;
+}
+
+.bg-5 {
+    background-color: #fffbf3;
 }
