@@ -9451,7 +9451,7 @@ body .st-sidebar-menu .sidebar .widget-social-follow a:hover {
 /* 24. Progress bar preloader */
 /* Body fadein/out effects */
 body.enable-progressbar {
-    opacity: 0.2;
+    /* opacity: 0.2; */
     transition: opacity 0.5s;
 }
 
