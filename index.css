@@ -160,3 +160,8 @@
 .bg-5 {
     background-color: #fffbf3;
 }
+
+.bg-grey {
+    background: linear-gradient(90deg, #fafafa 28px, transparent 1%) 50%, linear-gradient(#fafafa 28px, transparent 1%) 50%, #e6e6e6;
+    background-size: 30px 30px;
+}
