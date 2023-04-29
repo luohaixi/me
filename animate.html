@@ -56,7 +56,20 @@
         href="http://fonts.googleapis.com/css?family=Titillium+Web%3A300%2C400%2C500%26subset%3Dlatin%7CNunito%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%26subset%3Dlatin%7CRoboto%3A300%2C400%2C600%26subset%3Dlatin&amp;ver=1.0"
         type="text/css" media="all" />
 
+    <style>
+        @media (min-width:768px) {
+            .max-width {
+                max-width: 50%;
+            }
 
+        }
+
+        @media (min-width:576px) {
+            .max-width {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 
 
@@ -183,7 +196,7 @@
     </header>
 
     <div class="p-5 content-block stick-to-footer">
-        <div class="page-container container" style="margin:0 auto; max-width: 500px;">
+        <div class="page-container container max-width" style="margin:0 auto; max-width: 500px; ">
             <!-- 展示主体 -->
             <div class="mb-5 py-5 border-bottom">
                 <h2 class="">

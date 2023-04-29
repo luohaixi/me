@@ -57,7 +57,19 @@
         type="text/css" media="all" />
 
     <style>
+        @media (min-width:768px) {
+            .max-width {
+                max-width: 50%;
+            }
 
+        }
+
+        @media (min-width:576px) {
+            .max-width {
+                max-width: 100%;
+            }
+
+        }
     </style>
 </head>
 
@@ -184,7 +196,7 @@
         </div>
     </header>
     <div class="p-5">
-        <div class="page-container container" style="margin:0 auto; max-width: 50%;">
+        <div class="page-container container max-width" style="margin:0 auto; max-width: 500px;">
             <!-- 展示主体 -->
             <div class="mb-5 py-5 border-bottom">
                 <h2 class="">
