@@ -6717,6 +6717,7 @@ fieldset:disabled .btn {
     width: 100%;
     padding: 7em 7em 10em;
     background-color: #F2F3F6;
+    border: 1px solid #ebebeb;
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
