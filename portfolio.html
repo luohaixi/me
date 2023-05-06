@@ -139,6 +139,11 @@
             background: linear-gradient(90deg, #f2f2f2 28px, transparent 1%) 50%, linear-gradient(#f2f2f2 28px, transparent 1%) 50%, #e6e6e6;
             background-size: 30px 30px;
         }
+
+        .lang-line {
+            color: #DCDCDC;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 
@@ -280,20 +285,22 @@
                 </section>
                 <!-- tab按钮 -->
                 <section class="">
-                    <div class="container">
+                    <div class="container pb-3">
                         <div class="btn-group mx-3" role="group" aria-label="Basic radio toggle button group">
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
                                 checked>
                             <label class="btn btn-outline-dark" for="btnradio1">动态设计</label>
+                            <span class="lang-line">|</span>
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
                             <label class="btn btn-outline-dark" for="btnradio3">3D设计</label>
+                            <span class="lang-line">|</span>
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
                             <label class="btn btn-outline-dark" for="btnradio2">界面设计</label>
                         </div>
                     </div>
                 </section>
 
-                <article id="test2">
+                <article id="test1">
                     <!-- show短片 -->
                     <section class="py-5" style="margin-bottom:0px;">
                         <div class="container">
@@ -417,7 +424,7 @@
                 </article>
 
                 <!-- 其他3D作品 -->
-                <section class="py-5" id="test1">
+                <section class="py-5" id="test2">
                     <div class="container">
                         <div class="row mx-1 row-cols-2 row-cols-lg-3 g-3 ">
                             <div class="col position-relative hero-section">
@@ -579,25 +586,27 @@
     <!-- tab切换 -->
     <script>
         $(document).ready(function () {
-            $("#test1").hide()
+            $("#test2").hide()
             $("#test3").hide()
+
         });
 
         $("#btnradio1").click(function () {
-            $("#test1").fadeOut(10)
-            $("#test3").fadeOut(10)
-            $("#test2").fadeIn(10)
-        });
-
-        $("#btnradio3").click(function () {
-            console.log("test")
             $("#test2").fadeOut(10)
             $("#test3").fadeOut(10)
             $("#test1").fadeIn(10)
         });
+
+        $("#btnradio3").click(function () {
+            console.log("test")
+            $("#test1").fadeOut(10)
+            $("#test3").fadeOut(10)
+            $("#test2").fadeIn(10)
+        });
         $("#btnradio2").click(function () {
             console.log("test")
             $("#test1").fadeOut(10)
+            $("#test2").fadeOut(10)
             $("#test3").fadeIn(10)
         });
     </script>

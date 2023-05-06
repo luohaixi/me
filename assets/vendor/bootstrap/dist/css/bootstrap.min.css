@@ -4086,7 +4086,7 @@ fieldset:disabled .btn {
 .btn-group {
     padding: .1rem;
     border-radius: .375rem;
-    border: 1px solid #212529;
+    /* border: 1px solid #212529; */
 }
 
 .btn-group>.btn-group:not(:first-child),
