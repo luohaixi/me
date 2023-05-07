@@ -144,6 +144,14 @@
             color: #DCDCDC;
             font-size: 1.2em;
         }
+
+        .child {
+            display: none;
+        }
+
+        .hero-section:hover .child {
+            display: block;
+        }
     </style>
 </head>
 
@@ -299,7 +307,6 @@
                         </div>
                     </div>
                 </section>
-
                 <article id="test1">
                     <!-- show短片 -->
                     <section class="py-5" style="margin-bottom:0px;">
@@ -314,7 +321,7 @@
                     <!-- lotter其他动图 -->
                     <section class="py-5" style="margin-bottom:60px;">
                         <div class="container">
-                            <div class="row mx-1 row-cols-2 row-cols-lg-3 g-3 ">
+                            <div class="row mx-1 row-cols-2 row-cols-lg-4 g-3 ">
                                 <div class="col position-relative hero-section">
                                     <div class="atio ratio-1x1 bg-6 rounded-4" onclick="window.location='#'">
                                         <script
@@ -347,6 +354,65 @@
                                         </script>
                                         <lottie-player
                                             src="https://lottie.host/9e6e4022-17be-4c14-a427-a11999849ca0/dKLh3RbpoQ.json"
+                                            background="transparent" speed="1" style="width: 100%" loop autoplay>
+                                        </lottie-player>
+                                        </lottie-player>
+                                    </div>
+                                </div>
+                                <div class="col position-relative hero-section">
+                                    <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child"
+                                        onclick="window.location='animate.html'">
+                                        查看详情</div>
+                                    <div class="atio ratio-1x1 bg-6 rounded-4">
+                                        <script
+                                            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+                                        </script>
+                                        <lottie-player
+                                            src="https://lottie.host/c84d8d9c-49a2-4fea-a63e-2d030c1f7aec/KXAywRocIf.json"
+                                            background="transparent" speed="1" style="width: 100%" loop autoplay>
+                                        </lottie-player>
+                                        </lottie-player>
+                                    </div>
+                                </div>
+                                <div class="col position-relative hero-section">
+                                    <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child"
+                                        onclick="window.location='animate.html'">
+                                        查看详情</div>
+                                    <div class="atio ratio-1x1 bg-6 rounded-4">
+                                        <script
+                                            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+                                        </script>
+                                        <lottie-player
+                                            src="https://lottie.host/c84d8d9c-49a2-4fea-a63e-2d030c1f7aec/KXAywRocIf.json"
+                                            background="transparent" speed="1" style="width: 100%" loop autoplay>
+                                        </lottie-player>
+                                        </lottie-player>
+                                    </div>
+                                </div>
+                                <div class="col position-relative hero-section">
+                                    <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child"
+                                        onclick="window.location='animate2.html'">
+                                        查看详情</div>
+                                    <div class="p-5 atio ratio-1x1 bg-6 rounded-4" onclick="window.location='#'">
+                                        <script
+                                            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+                                        </script>
+                                        <lottie-player
+                                            src="https://lottie.host/33624485-14f9-4160-aa6b-2ab283d69dd7/z90Q83cFWE.json"
+                                            background="transparent" speed="1" style="width: 100%" loop autoplay>
+                                        </lottie-player>
+                                    </div>
+                                </div>
+                                <div class="col position-relative hero-section">
+                                    <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child"
+                                        onclick="window.location='animate.html'">
+                                        查看详情</div>
+                                    <div class="p-5 atio ratio-1x1 bg-6 rounded-4" onclick="window.location='#'">
+                                        <script
+                                            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+                                        </script>
+                                        <lottie-player
+                                            src="https://lottie.host/8b7ad1ee-a019-4cc5-8a9d-79cc21ba63bb/ARO1h2PhiB.json"
                                             background="transparent" speed="1" style="width: 100%" loop autoplay>
                                         </lottie-player>
                                         </lottie-player>
@@ -428,7 +494,7 @@
                     <div class="container">
                         <div class="row mx-1 row-cols-2 row-cols-lg-3 g-3 ">
                             <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white"
+                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child"
                                     onclick="window.location='animate.html'">
                                     查看详情</div>
                                 <div class="atio ratio-1x1" onclick="window.location='#'">
@@ -437,7 +503,7 @@
                                 </div>
                             </div>
                             <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white"
+                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child"
                                     onclick="window.location='animate2.html'">
                                     查看详情</div>
                                 <div class="atio ratio-1x1">
@@ -446,83 +512,70 @@
                                 </div>
                             </div>
                             <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white">
+                                <div
+                                    class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child">
                                     查看详情</div>
                                 <div class="atio ratio-1x1" onclick="window.location='#'">
                                     <img src="picture/title_page/FG5.jpeg" class="card-img-top rounded-4" alt="...">
                                 </div>
                             </div>
                             <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white">
+                                <div
+                                    class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child">
                                     查看详情</div>
                                 <div class="atio ratio-1x1 bg-6 rounded-4">
-                                    <script
-                                        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
-                                    </script>
-                                    <lottie-player
-                                        src="https://lottie.host/c84d8d9c-49a2-4fea-a63e-2d030c1f7aec/KXAywRocIf.json"
-                                        background="transparent" speed="1" style="width: 100%" loop autoplay>
-                                    </lottie-player>
-                                    </lottie-player>
+                                    <img src="picture/title_page/image-card-2.png" class="card-img-top rounded-4"
+                                        alt="...">
                                 </div>
                             </div>
                             <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white">
+                                <div
+                                    class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white child">
                                     查看详情</div>
-                                <div class="p-5 atio ratio-1x1 bg-6 rounded-4" onclick="window.location='#'">
-                                    <script
-                                        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
-                                    </script>
-                                    <lottie-player
-                                        src="https://lottie.host/33624485-14f9-4160-aa6b-2ab283d69dd7/z90Q83cFWE.json"
-                                        background="transparent" speed="1" style="width: 100%" loop autoplay>
-                                    </lottie-player>
+                                <div class="atio ratio-1x1 bg-6 rounded-4" onclick="window.location='#'">
+                                    <img src="picture/title_page/image-card-3.jpeg" class="card-img-top rounded-4"
+                                        alt="...">
                                 </div>
                             </div>
-                            <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white">
-                                    查看详情</div>
-                                <div class="p-5 atio ratio-1x1 bg-6 rounded-4" onclick="window.location='#'">
-                                    <script
-                                        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
-                                    </script>
-                                    <lottie-player
-                                        src="https://lottie.host/8b7ad1ee-a019-4cc5-8a9d-79cc21ba63bb/ARO1h2PhiB.json"
-                                        background="transparent" speed="1" style="width: 100%" loop autoplay>
-                                    </lottie-player>
-                                    </lottie-player>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </section>
                 <!-- 其他UI作品 -->
                 <section class="py-5" id="test3">
                     <div class="container">
-                        <div class="row mx-1 row-cols-2 row-cols-lg-3 g-3 ">
-                            <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white"
-                                    onclick="window.location='animate.html'">
-                                    查看详情</div>
-                                <div class="atio ratio-1x1" onclick="window.location='#'">
-                                    <img src="picture/title_page/image-card-1.jpeg"
-                                        class="card-img-top bg-light rounded-4" alt="..." style="height:100% ;">
+                        <div class="row mx-1 row-cols-1 row-cols-sm-2  g-4">
+                            <div class="col">
+                                <div class="card hero-section h-100" onclick="window.location='UI.html'">
+                                    <img src="picture/title_page/UI封面.png" class="card-img-top bg-light" alt="..."
+                                        style="border-radius: 0.5em;">
+                                    <div class="card-body">
+                                        <h4 class="card-title">活动页UI设计复盘</h4>
+                                        <p class="card-text d-none d-md-block">运用金融探索的背景故事，激发用户探索欲望，给用户呈现全新体验</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white"
-                                    onclick="window.location='animate2.html'">
-                                    查看详情</div>
-                                <div class="atio ratio-1x1">
-                                    <img src="picture/title_page/hero_typism.png" class="card-img-top rounded-4"
-                                        alt="...">
+
+                            <div class="col">
+                                <div class="card hero-section h-100" onclick="window.location='2021总结.html'">
+                                    <img src="picture/title_page/2021总结.png" class="card-img-top" alt="..."
+                                        style="border-radius: 0.5em;">
+
+                                    <div class="card-body">
+                                        <h4 class="card-title">2021年终总结</h4>
+                                        <p class="card-text d-none d-md-block">设计成果汇总，复盘总结继续前进，积土而为山，积水而为海</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col position-relative hero-section">
-                                <div class="position-absolute bottom-0 start-0 rounded-pill px-3 py-2 m-3 bg-white">
-                                    查看详情</div>
-                                <div class="atio ratio-1x1" onclick="window.location='#'">
-                                    <img src="picture/title_page/FG5.jpeg" class="card-img-top rounded-4" alt="...">
+
+                            <div class="col">
+                                <div class="card hero-section h-100" onclick="window.location='设计大奖.html'">
+                                    <img src="picture/title_page/设计奖.png" class="card-img-top" alt="..."
+                                        style="border-radius: 0.5em;">
+                                    <div class="card-body">
+                                        <h4 class="card-title">四项国际设计大奖</h4>
+                                        <p class="card-text d-none d-md-block">在产品设计理念上，坚持创新和普惠金融理念，推出简约实惠的银行产品</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

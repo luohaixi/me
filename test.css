@@ -22,10 +22,6 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.id-card img {
-    height: 160px;
-}
-
 .cardheader {
     display: flex;
     flex-direction: row;
@@ -89,7 +85,6 @@ ul {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
     /* width: 60%; */
     /* height: 60%; */
     z-index: 1002;
@@ -111,5 +106,5 @@ ul {
 
 /* 圆角 */
 .fun-1 {
-    border-radius: 0.5rem;
+    border-radius: rem;
 }
