@@ -222,13 +222,13 @@
 
     <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
     <script>
-        const r = new rive.Rive({
+        const t = new rive.Rive({
             src: "animate/rating_animation.riv",
             canvas: document.getElementById("canvas"),
             autoplay: true,
             stateMachines: "State Machine 1",
             onLoad: () => {
-                r.resizeDrawingSurfaceToCanvas();
+                t.resizeDrawingSurfaceToCanvas();
             },
         });
     </script>
