@@ -51,6 +51,7 @@
     <link rel="icon" href="upload/cropped-favicon-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon-precomposed" href="upload/cropped-favicon-180x180.png" />
     <meta name="msapplication-TileImage" content="upload/cropped-favicon-270x270.png" />
+    <link rel="stylesheet" href="assets/css/blogTheme.css" />
 
     <link rel="stylesheet" id="barrel-fonts-css"
         href="http://fonts.googleapis.com/css?family=Titillium+Web%3A300%2C400%2C500%26subset%3Dlatin%7CNunito%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%26subset%3Dlatin%7CRoboto%3A300%2C400%2C600%26subset%3Dlatin&amp;ver=1.0"
@@ -152,15 +153,31 @@
         .hero-section:hover .child {
             display: block;
         }
+
+        .switch {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 35px;
+            margin-left: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .dark-menu-item {
+            border: 1px solid #ebebeb;
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 
-<body class="home page-template-default page page-id-19 enable-progressbar enable-left-header responsive">
+<body class="home page-template-default page page-id-19 enable-progressbar enable-left-header responsive theme-dark">
     <div class="header-progressbar">
         <div class="header-progressbar-under-bar"></div>
     </div>
     <header class="left-side-header">
-        <div class="header-left-wrapper header-left-align-left header-color-style-light border-end">
+        <div
+            class="header-left-wrapper header-left-align-left header-color-style-light border-end dark-header dark-border-end">
             <div class="header-left-logo clearfix">
                 <a class="logo-link logo-text" href="index.html">
                     <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -190,7 +207,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <span style="font-size:.6em;font-weight: 600;">Haixi's blog</span>
+                    <span class="text" style="font-size:.6em;font-weight: 600;">Haixi's blog</span>
                 </a>
                 <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
             </div>
@@ -198,7 +215,7 @@
                 <div class="menu-header-left-menu-container">
                     <ul id="menu-header-left-menu" class="header-left-menu">
                         <li class="menu-item menu-item-home current-menu-item current_page_item">
-                            <a href="index.html">
+                            <a href="index.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -209,7 +226,7 @@
                                         stroke-linejoin="round" />
                                 </svg>首页</a>
                         </li>
-                        <li class="menu-item"><a href="blog.html">
+                        <li class="menu-item"><a href="blog.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 20H21" stroke="#212121" stroke-width="2" stroke-linecap="round"
@@ -220,8 +237,7 @@
                                         stroke-linejoin="round" />
                                 </svg>学习沉淀</a>
                         </li>
-                        <li class="menu-item"><a href="portfolio.html"
-                                style="background-color:#f1f1f1;border: 1px solid #ebebeb;">
+                        <li class="menu-item"><a href="portfolio.html" class="dark-menu-item text">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -232,20 +248,15 @@
                                         stroke-linejoin="round" />
                                 </svg>专业设计</a>
                         </li>
-                        <li class="menu-item"><a href="about.html">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        <li class="menu-item"><a href="about.html" class="btn-text-6">
+                                <svg class="icon-color-6" width="20" height="20" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                        stroke="#212121" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M16.2398 7.76001L14.1198 14.12L7.75977 16.24L9.87977 9.88001L16.2398 7.76001Z"
-                                        stroke="#212121" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
+                                        d="M13.5905 13.591L13.8859 14.2804C14.0582 14.2065 14.1966 14.0708 14.2739 13.9L13.5905 13.591ZM16.2243 7.76513L16.9077 8.07408C17.0364 7.78946 16.9752 7.45488 16.7541 7.23424C16.533 7.0136 16.1983 6.9531 15.9139 7.08236L16.2243 7.76513ZM10.4085 10.409L10.0981 9.72621C9.92794 9.80357 9.79278 9.9417 9.71914 10.1135L10.4085 10.409ZM8.022 15.9774L7.33264 15.682C7.21184 15.9639 7.27481 16.2909 7.49167 16.5078C7.70852 16.7246 8.03555 16.7876 8.31743 16.6668L8.022 15.9774ZM20.25 12C20.25 16.5563 16.5563 20.25 12 20.25V21.75C17.3848 21.75 21.75 17.3848 21.75 12H20.25ZM12 20.25C7.44365 20.25 3.75 16.5563 3.75 12H2.25C2.25 17.3848 6.61522 21.75 12 21.75V20.25ZM3.75 12C3.75 7.44365 7.44365 3.75 12 3.75V2.25C6.61522 2.25 2.25 6.61522 2.25 12H3.75ZM12 3.75C16.5563 3.75 20.25 7.44365 20.25 12H21.75C21.75 6.61522 17.3848 2.25 12 2.25V3.75ZM14.2739 13.9L16.9077 8.07408L15.5409 7.45617L12.9071 13.2821L14.2739 13.9ZM15.9139 7.08236L10.0981 9.72621L10.7189 11.0917L16.5347 8.44789L15.9139 7.08236ZM9.71914 10.1135L7.33264 15.682L8.71136 16.2729L11.0979 10.7044L9.71914 10.1135ZM8.31743 16.6668L13.8859 14.2804L13.295 12.9017L7.72657 15.2881L8.31743 16.6668Z"
+                                        fill="#212121" />
                                 </svg>未来发展</a>
                         </li>
-                        <li class="menu-item" onclick="window.location='aboutme.html'"><a href="#">
+                        <li class="menu-item" onclick="window.location='aboutme.html'"><a href="#" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -263,21 +274,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="social-icons-wrapper position-absolute bottom-0">
+            <div class="social-icons-wrapper position-absolute bottom-0 d-flex align-items-center">
                 <ul>
                     <li>
                         <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
-                            <i class="fa fa-github"></i></a>
+                            <i class="fa fa-github icon-color-6"></i></a>
                     </li>
                     <li>
                         <a href="https://www.pinterest.com/haixiluo/" target="_blank" class="a-pinterest">
-                            <i class="fa fa-pinterest"></i></a>
+                            <i class="fa fa-pinterest icon-color-6"></i></a>
                     </li>
                     <li>
                         <a href="https://dribbble.com/luohaixi/shots" target="_blank" class="a-dribbble">
-                            <i class="fa fa-dribbble"></i></a>
+                            <i class="fa fa-dribbble icon-color-6"></i></a>
                     </li>
                 </ul>
+                <section class="switch">
+                    <div class="toggle-btn" id="_1st-toggle-btn">
+                        <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
+                        <span></span>
+                    </div>
+                </section>
             </div>
         </div>
     </header>
@@ -288,7 +305,7 @@
                 <!-- 展示主体 -->
                 <section class="py-2">
                     <div class="container">
-                        <div class="header-title pb-3 mx-1">Projects</div>
+                        <div class="header-title pb-3 mx-1 text">Projects</div>
                     </div>
                 </section>
                 <!-- tab按钮 -->
@@ -324,7 +341,7 @@
                             <div class="p-3 d-flex">
                                 <span class="me-2 bg-info rounded-2" style="width:0.75em;margin-bottom: 1em;">
                                 </span>
-                                <p class="h3">展示动效</p>
+                                <p class="h3 text">展示动效</p>
                             </div>
                             <div class="row mx-1 g-3">
                                 <div class="col-sm-6 position-relative hero-section">
@@ -410,7 +427,7 @@
                             <div class="p-3 d-flex">
                                 <span class="me-2 bg-primary rounded-2" style="width:0.75em;margin-bottom: 1em;">
                                 </span>
-                                <p class="h3">互动动效</p>
+                                <p class="h3 text">互动动效</p>
                             </div>
                             <div class="row mx-1 g-3">
                                 <div class="col-sm-6 position-relative hero-section">
@@ -421,7 +438,7 @@
                                             <path fill-rule="evenodd"
                                                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
                                         </svg></div>
-                                    <div class="atio ratio-1x1 bg-6 rounded-4 d-flex">
+                                    <div class="atio ratio-1x1 rounded-4 d-flex">
                                         <canvas id="canvas" class="w-100 rounded-4" width="800" height="800"></canvas>
                                         <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
                                         <script>
@@ -476,7 +493,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12 position-relative hero-section">
-                                            <div class="atio ratio-21x9 bg-6 rounded-4 d-flex overflow-hidden">
+                                            <div class="atio ratio-21x9 rounded-4 d-flex overflow-hidden">
                                                 <canvas id="canvas_3" class="w-100 rounded-4" width="456"
                                                     height="222"></canvas>
                                                 <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
@@ -550,7 +567,7 @@
                                         <path fill-rule="evenodd"
                                             d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
                                     </svg></div>
-                                <div class="atio ratio-1x1 bg-6 rounded-4">
+                                <div class="atio ratio-1x1 rounded-4">
                                     <img src="picture/title_page/image-card-2.png" class="card-img-top rounded-4"
                                         alt="...">
                                 </div>
@@ -563,7 +580,7 @@
                                         <path fill-rule="evenodd"
                                             d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
                                     </svg></div>
-                                <div class="atio ratio-1x1 bg-6 rounded-4">
+                                <div class="atio ratio-1x1 rounded-4">
                                     <img src="picture/title_page/image-card-3.jpeg" class="card-img-top rounded-4"
                                         alt="...">
                                 </div>
@@ -576,9 +593,9 @@
                             <div class="p-3 d-flex">
                                 <span class="me-2 bg-primary rounded-2" style="width:0.75em;margin-bottom: 1em;">
                                 </span>
-                                <p class="h3">实时渲染</p>
+                                <p class="h3 text">实时渲染</p>
                             </div>
-                            <div class="mx-3 bg-6 rounded-4 ratio ratio-16x9 overflow-hidden"
+                            <div class="mx-3 bg-6 rounded-4 ratio ratio-16x9 overflow-hidden dark-bg"
                                 style="position:relative;border: 1px solid #ebebeb;">
                                 <div class="p-3">
                                     <div class="" style="height:100%;">
@@ -650,8 +667,8 @@
                                     <img src="picture/title_page/UI封面.png" class="card-img-top bg-light" alt="..."
                                         style="border-radius: 0.5em;">
                                     <div class="card-body">
-                                        <h4 class="card-title">活动页UI设计复盘</h4>
-                                        <p class="card-text d-none d-md-block">运用金融探索的背景故事，激发用户探索欲望，给用户呈现全新体验</p>
+                                        <h4 class="card-title text">活动页UI设计复盘</h4>
+                                        <p class="card-text d-none d-md-block text">运用金融探索的背景故事，激发用户探索欲望，给用户呈现全新体验</p>
                                     </div>
                                 </div>
                             </div>
@@ -662,8 +679,8 @@
                                         style="border-radius: 0.5em;">
 
                                     <div class="card-body">
-                                        <h4 class="card-title">2021年终总结</h4>
-                                        <p class="card-text d-none d-md-block">设计成果汇总，复盘总结继续前进，积土而为山，积水而为海</p>
+                                        <h4 class="card-title text">2021年终总结</h4>
+                                        <p class="card-text d-none d-md-block text">设计成果汇总，复盘总结继续前进，积土而为山，积水而为海</p>
                                     </div>
                                 </div>
                             </div>
@@ -673,8 +690,8 @@
                                     <img src="picture/title_page/设计奖.png" class="card-img-top" alt="..."
                                         style="border-radius: 0.5em;">
                                     <div class="card-body">
-                                        <h4 class="card-title">四项国际设计大奖</h4>
-                                        <p class="card-text d-none d-md-block">在产品设计理念上，坚持创新和普惠金融理念，推出简约实惠的银行产品</p>
+                                        <h4 class="card-title text">四项国际设计大奖</h4>
+                                        <p class="card-text d-none d-md-block text">在产品设计理念上，坚持创新和普惠金融理念，推出简约实惠的银行产品</p>
                                     </div>
                                 </div>
                             </div>
@@ -683,9 +700,9 @@
                 </section>
             </div>
         </div>
-        <footer class="p-5 bg-white text-center mt-5 border-top">
+        <footer class="p-5 bg-white text-center mt-5 border-top dark-header dark-border-top">
             <div class="container">
-                <span class="lead">
+                <span class="lead text-6">
                     Keep the passion and beginner's mind.
                 </span>
             </div>
@@ -731,6 +748,9 @@
 
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- 主题 -->
+    <script src="assets/js/theme.js"></script>
 
     <!-- 实时渲染 -->
     <script type="module" src="assets/js/canvas.js"></script>

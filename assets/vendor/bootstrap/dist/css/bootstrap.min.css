@@ -58,7 +58,7 @@
     --bs-blue: linear-gradient(-45deg, rgb(107, 42, 245, 1), rgba(255, 255, 255, 0));
     --bs-body-font-family: var(--bs-font-sans-serif);
     --bs-body-font-size: 1em;
-    --bs-body-font-weight: 400;
+    --bs-body-font-weight: 300;
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
     --bs-body-bg: #fff;
@@ -277,7 +277,7 @@ sup {
 }
 
 a {
-    color: var(--bs-link-color);
+    color: var(--bs-link-color-);
     text-decoration: none
 }
 
@@ -4831,7 +4831,7 @@ fieldset:disabled .btn {
     --bs-card-cap-color: ;
     --bs-card-height: ;
     --bs-card-color: ;
-    --bs-card-bg: #fff;
+    /* --bs-card-bg: #fff; */
     --bs-card-img-overlay-padding: 1em;
     --bs-card-group-margin: 0.75em;
     position: relative;
