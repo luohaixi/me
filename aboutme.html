@@ -9,6 +9,8 @@
     <!-- 新加的 -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
+    <!-- 主题暗黑 -->
+    <link rel="stylesheet" href="assets/css/blogTheme.css" />
 
     <!-- 原始的 -->
     <link rel="stylesheet" href="css/pe-icon-7-stroke.css" type="text/css" media="all" />
@@ -94,7 +96,8 @@
         <div class="header-progressbar-under-bar"></div>
     </div>
     <header class="left-side-header">
-        <div class="header-left-wrapper header-left-align-left header-color-style-light border-end">
+        <div
+            class="header-left-wrapper header-left-align-left header-color-style-light border-end dark-header dark-border-end">
             <div class="header-left-logo clearfix">
                 <a class="logo-link logo-text" href="index.html">
                     <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +127,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <span style="font-size:.6em;font-weight: 600;">Haixi's blog</span>
+                    <span class="text" style="font-size:.6em;font-weight: 600;">Haixi's blog</span>
                 </a>
                 <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
             </div>
@@ -132,7 +135,7 @@
                 <div class="menu-header-left-menu-container">
                     <ul id="menu-header-left-menu" class="header-left-menu">
                         <li class="menu-item menu-item-home current-menu-item current_page_item">
-                            <a href="index.html">
+                            <a href="index.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -143,7 +146,7 @@
                                         stroke-linejoin="round" />
                                 </svg>首页</a>
                         </li>
-                        <li class="menu-item"><a href="blog.html">
+                        <li class="menu-item"><a href="blog.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 20H21" stroke="#212121" stroke-width="2" stroke-linecap="round"
@@ -153,7 +156,7 @@
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>学习沉淀</a></li>
-                        <li class="menu-item"><a href="portfolio.html">
+                        <li class="menu-item"><a href="portfolio.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -163,7 +166,7 @@
                                     <path d="M17 2L12 7L7 2" stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>专业设计</a></li>
-                        <li class="menu-item"><a href="about.html">
+                        <li class="menu-item"><a href="about.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -176,7 +179,7 @@
                                         stroke-linejoin="round" />
                                 </svg>未来发展</a></li>
                         <li class="menu-item" onclick="window.location='aboutme.html'"><a href="#"
-                                style="background-color:#f1f1f1;border: 1px solid #ebebeb;">
+                                class="dark-menu-item text">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -193,21 +196,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="social-icons-wrapper position-absolute bottom-0">
+            <div class="social-icons-wrapper position-absolute bottom-0 d-flex align-items-center">
                 <ul>
                     <li>
                         <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
-                            <i class="fa fa-github"></i></a>
+                            <i class="fa fa-github icon-color-6"></i></a>
                     </li>
                     <li>
                         <a href="https://www.pinterest.com/haixiluo/" target="_blank" class="a-pinterest">
-                            <i class="fa fa-pinterest"></i></a>
+                            <i class="fa fa-pinterest icon-color-6"></i></a>
                     </li>
                     <li>
                         <a href="https://dribbble.com/luohaixi/shots" target="_blank" class="a-dribbble">
-                            <i class="fa fa-dribbble"></i></a>
+                            <i class="fa fa-dribbble icon-color-6"></i></a>
                     </li>
                 </ul>
+                <section class="switch">
+                    <div class="toggle-btn" id="_1st-toggle-btn">
+                        <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
+                        <span></span>
+                    </div>
+                </section>
             </div>
         </div>
     </header>
@@ -218,8 +227,8 @@
             <section class="p-5 text-center text-sm-start">
                 <div class="container px-5">
                     <div class="row">
-                        <div class="col-12 pt-5">
-                            <p class="h2">About me</p>
+                        <div class="col-12 pt-5 text">
+                            <div class="h2">About me</div>
                             <p class="my-4 text-black-50">
                                 哈喽，我是
                                 一名95后设计师，一直从事用户体验相关的工作，我喜欢将技术与人联系起来，比如
@@ -247,19 +256,19 @@
                     </div>
                 </div>
             </section>
-            <section class="p-5 bg-light mx-3 bg-light rounded-4 text-center text-sm-start">
+            <section class="p-5 bg-light mx-3 bg-light rounded-4 text-center text-sm-start dark-header">
                 <div class="container p-5">
                     <div class="row">
-                        <div class="col-md p-5">
-                            <p class="h4">工作经历</p>
-                            <div class="my-4">
-                                <div class="text-black-50 mb-2">2020 , 6 - 至今/北京小米</div>
+                        <div class="col-md p-5 text">
+                            <div class="h4">工作经历</div>
+                            <div class="my-4 text">
+                                <p class="text-black-50 mb-2">2020 , 6 - 至今/北京小米</p>
                                 <p class="h5">
                                     用户体验设计师 | 天星数字科技有限公司
                                 </p>
                             </div>
                             <div class="my-4">
-                                <ul>
+                                <ul class="text-6">
                                     <li class="text-black-50 mb-2">
                                         负责天星银行UI界面，运营活动的视觉设计，配合产品/业务，独立完成界面结构并最终输出高保真设计，推进最终效果实现
                                     </li>
@@ -273,28 +282,28 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md p-5">
-                            <p class="h4">教育经历</p>
+                        <div class="col-md p-5 text">
+                            <div class="h4">教育经历</div>
                             <div class="my-4 ">
-                                <div class="text-black-50">2016 - 2020</div>
+                                <p class="text-black-50">2016 - 2020</p>
                                 <p class="h5">
                                     湖南工程学院-设计艺术学院-产品设计
                                 </p>
                             </div>
                             <div class="my-4 ">
-                                <div class="text-black-50">2018 - 2020</div>
+                                <p class="text-black-50">2018 - 2020</p>
                                 <p class="">
                                     Intro to Figma Plugin Api
                                 </p>
                             </div>
                             <div class="my-4 ">
-                                <div class="text-black-50">2015 - 2018</div>
+                                <p class="text-black-50">2015 - 2018</p>
                                 <p class="">
                                     Building Open Source Plugins
                                 </p>
                             </div>
                             <div class="my-4 ">
-                                <div class="text-black-50">2014 - 2015</div>
+                                <p class="text-black-50">2014 - 2015</p>
                                 <p class="">
                                     Redesigning the Discord Overlay
                                 </p>
@@ -307,10 +316,10 @@
             <section class="p-5 text-center text-sm-start rounded-4">
                 <div class="container p-5">
                     <div class="row align-items-center justify-content-between">
-                        <div class="col-xl p-5">
-                            <p class="h4">我的优势</p>
+                        <div class="col-xl p-5 text">
+                            <div class="h4">我的优势</div>
                             <div class="my-4">
-                                <div class="text-black-50 mb-2">2020 , 6 - 至今/北京小米</div>
+                                <div class="text-black-50 mb-2 text-6">2020 , 6 - 至今/北京小米</div>
                                 <p class="h5">多领域的设计技能</p>
                                 <p class="mb-4 text-black-50">
                                     设计技能覆盖了UI设计、网页设计、动效设计和3D建模渲染等多个领域，可以综合运用不同的设计技能来解决问题。
@@ -332,12 +341,12 @@
             </section>
 
             <!-- 联系我 -->
-            <section class="p-5 mx-3 bg-light rounded-4">
+            <section class="p-5 mx-3 bg-light rounded-4 dark-header">
                 <div class="container">
                     <div class="row align-items-center py-5">
-                        <div class="col-md p-5 text-center">
-                            <p class="h2" style="font-size:6em ;">聊一下<br><svg width="60" height="60" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="col-md p-5 text-center text">
+                            <div class="h2" style="font-size:6em ;">聊一下<br><svg width="60" height="60"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M18 8H19C20.0609 8 21.0783 8.42143 21.8284 9.17157C22.5786 9.92172 23 10.9391 23 12C23 13.0609 22.5786 14.0783 21.8284 14.8284C21.0783 15.5786 20.0609 16 19 16H18"
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
@@ -353,7 +362,7 @@
                                     <path d="M14 1V4" stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
-                            </p>
+                            </div>
                             <p class="h5">Send over an email</p>
                             <p class="my-4"></p>
 
@@ -363,9 +372,9 @@
             </section>
         </div>
 
-        <footer class="p-5 bg-white text-center mt-5 border-top">
+        <footer class="p-5 bg-white text-center mt-5 border-top dark-header dark-border-top">
             <div class="container">
-                <span class="lead">
+                <span class="lead text-6">
                     Keep the passion and beginner's mind.
                 </span>
             </div>
@@ -405,6 +414,8 @@
 
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
+    <!-- 主题 -->
+    <script src="assets/js/theme.js"></script>
 
 </body>
 

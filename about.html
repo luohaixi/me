@@ -9,6 +9,8 @@
     <!-- 新加的 -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
+    <!-- 主题暗黑 -->
+    <link rel="stylesheet" href="assets/css/blogTheme.css" />
 
     <!-- 原始的 -->
     <link rel="stylesheet" href="css/pe-icon-7-stroke.css" type="text/css" media="all" />
@@ -65,7 +67,8 @@
         <div class="header-progressbar-under-bar"></div>
     </div>
     <header class="left-side-header">
-        <div class="header-left-wrapper header-left-align-left header-color-style-light border-end">
+        <div
+            class="header-left-wrapper header-left-align-left header-color-style-light border-end dark-header dark-border-end">
             <div class="header-left-logo clearfix">
                 <a class="logo-link logo-text" href="index.html">
                     <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +98,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <span style="font-size:.6em;font-weight: 600;">Haixi's blog</span>
+                    <span class="text" style="font-size:.6em;font-weight: 600;">Haixi's blog</span>
                 </a>
 
                 <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -104,8 +107,8 @@
                 <div class="menu-header-left-menu-container">
                     <ul id="menu-header-left-menu" class="header-left-menu">
                         <li class="menu-item menu-item-home current-menu-item current_page_item">
-                            <a href="index.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                            <a href="index.html" class="btn-text-6"><svg width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
@@ -114,7 +117,7 @@
                                         stroke-linejoin="round" />
                                 </svg>首页</a>
                         </li>
-                        <li class="menu-item"><a href="blog.html">
+                        <li class="menu-item"><a href="blog.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 20H21" stroke="#212121" stroke-width="2" stroke-linecap="round"
@@ -124,7 +127,7 @@
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>学习沉淀</a></li>
-                        <li class="menu-item"><a href="portfolio.html">
+                        <li class="menu-item"><a href="portfolio.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -134,8 +137,7 @@
                                     <path d="M17 2L12 7L7 2" stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>专业设计</a></li>
-                        <li class="menu-item"><a href="about.html"
-                                style="background-color:#f1f1f1;border: 1px solid #ebebeb;">
+                        <li class="menu-item"><a href="about.html" class="dark-menu-item text">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -147,7 +149,7 @@
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>未来发展</a></li>
-                        <li class="menu-item" onclick="window.location='aboutme.html'"><a href="#">
+                        <li class="menu-item" onclick="window.location='aboutme.html'"><a href="#" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -164,21 +166,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="social-icons-wrapper  position-absolute bottom-0">
+            <div class="social-icons-wrapper  position-absolute bottom-0 d-flex align-items-center">
                 <ul>
                     <li>
                         <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
-                            <i class="fa fa-github"></i></a>
+                            <i class="fa fa-github icon-color-6"></i></a>
                     </li>
                     <li>
                         <a href="https://www.pinterest.com/haixiluo/" target="_blank" class="a-pinterest">
-                            <i class="fa fa-pinterest"></i></a>
+                            <i class="fa fa-pinterest icon-color-6"></i></a>
                     </li>
                     <li>
                         <a href="https://dribbble.com/luohaixi/shots" target="_blank" class="a-dribbble">
-                            <i class="fa fa-dribbble"></i></a>
+                            <i class="fa fa-dribbble icon-color-6"></i></a>
                     </li>
                 </ul>
+                <section class="switch">
+                    <div class="toggle-btn" id="_1st-toggle-btn">
+                        <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
+                        <span></span>
+                    </div>
+                </section>
             </div>
         </div>
     </header>
@@ -243,13 +251,13 @@
                 <section class="py-5">
                     <div class="container" style="padding-top: 60px;">
                         <div class="text-black">
-                            <div class="p-4 mx-3 d-flex flex-column rounded-4"
+                            <div class="p-4 mx-3 d-flex flex-column rounded-4 dark-header dark-border"
                                 style="background-color:#F2F3F6 ;position: relative;border: 1px solid #ebebeb;">
-                                <p class="h3">探索方向</p>
+                                <p class="h3 mb-3 text">探索方向</p>
                                 <div class="row gap-3">
                                     <div
-                                        class="py-5 hero-section col bg-4 rounded-3 d-flex align-items-center justify-content-center">
-                                        <span class="h5 mb-0">
+                                        class="py-5 hero-section col bg-4 rounded-3 d-flex align-items-center justify-content-center bg-dark-3">
+                                        <span class="h5 mb-0 text">
                                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -264,8 +272,8 @@
                                         </span>
                                     </div>
                                     <div
-                                        class="hero-section col bg-4 rounded-3 d-flex align-items-center justify-content-center">
-                                        <span class="h5 mb-0">
+                                        class="hero-section col bg-4 rounded-3 d-flex align-items-center justify-content-center bg-dark-3">
+                                        <div class="h5 mb-0 text">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -281,13 +289,12 @@
                                                 <path d="M11.8599 3.38L15.2399 7.58" stroke="#212121" stroke-width="2"
                                                     stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
-
                                             <span class="ms-1">动效设计</span>
-                                        </span>
+                                        </div>
                                     </div>
                                     <div
-                                        class="hero-section col bg-4 rounded-3 d-flex align-items-center justify-content-center">
-                                        <span class="h5 mb-0">
+                                        class="hero-section col bg-4 rounded-3 d-flex align-items-center justify-content-center bg-dark-3">
+                                        <span class="h5 mb-0 text">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -305,7 +312,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </section>
                 <!-- 旋转木马 -->
@@ -324,23 +330,24 @@
                                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
                                     aria-label="Slide 5"></button>
                             </div>
-                            <div class="carousel-inner rounded-4">
+                            <div class="carousel-inner bg-6 rounded-4 dark-header dark-border"
+                                style="border: 1px solid #ebebeb;">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="picture/title_page/发现.webp" class="d-block w-100 rounded-4" alt="...">
+                                    <img src="picture/title_page/发现.webp" class="d-block w-100 rounded-3" alt="...">
                                     <!-- <div class="carousel-caption d-none d-md-block">
                                         <h5>动效与互动</h5>
                                         <p>Some representative placeholder content for the first slide.</p>
                                     </div> -->
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="picture/title_page/寻找.webp" class="d-block w-100 rounded-4" alt="...">
+                                    <img src="picture/title_page/寻找.webp" class="d-block w-100 rounded-3" alt="...">
                                     <!-- <div class="carousel-caption d-none d-md-block">
                                         <h5>实时渲染</h5>
                                         <p>Some representative placeholder content for the second slide.</p>
                                     </div> -->
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="picture/title_page/笔记.webp" class="d-block w-100 rounded-4" alt="...">
+                                    <img src="picture/title_page/笔记.webp" class="d-block w-100 rounded-3" alt="...">
                                     <!-- <div class="carousel-caption d-none d-md-block">
                                         <h5>3D设计</h5>
                                         <p>Some representative placeholder content for the third slide.</p>
@@ -375,14 +382,15 @@
                     <div class="container">
                         <div class="row gap-3">
                             <div class="text-black">
-                                <div class="p-4 mx-3 d-flex flex-column rounded-4"
+                                <div class="p-4 mx-3 d-flex flex-column rounded-4 dark-header dark-border"
                                     style="background-color:#E1E2F6 ;position: relative; border: 1px solid #d9dbfd;">
                                     <div class="pb-">
-                                        <p class="h4">我的项目关于</p>
+                                        <p class="h4 text">我的项目关于</p>
                                     </div>
                                     <div class="row gap-3">
-                                        <div class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center">
-                                            <div class="h6 mb-0">
+                                        <div
+                                            class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center bg-dark-3">
+                                            <div class="h6 mb-0 text">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                     fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
                                                     <path
@@ -393,8 +401,9 @@
                                                 <span class="ms-1">网页设计</span>
                                             </div>
                                         </div>
-                                        <div class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center">
-                                            <span class="h6 mb-0">
+                                        <div
+                                            class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center bg-dark-3">
+                                            <span class="h6 mb-0 text">
                                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -408,8 +417,9 @@
                                                 <span class="ms-1">用户体验</span>
                                             </span>
                                         </div>
-                                        <div class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center">
-                                            <span class="h6 mb-0">
+                                        <div
+                                            class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center bg-dark-3">
+                                            <span class="h6 mb-0 text">
                                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -431,8 +441,9 @@
                                             </span>
                                         </div>
 
-                                        <div class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center">
-                                            <span class="h6 mb-0">
+                                        <div
+                                            class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center bg-dark-3">
+                                            <span class="h6 mb-0 text">
                                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -448,8 +459,9 @@
                                                 <span class="ms-1">3D设计</span>
                                             </span>
                                         </div>
-                                        <div class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center">
-                                            <span class="h6 mb-0">
+                                        <div
+                                            class="hero-section col p-3 bg-4 rounded-4 d-flex align-items-center bg-dark-3">
+                                            <span class="h6 mb-0 text">
                                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 16L22 12L18 8" stroke="#212121" stroke-width="1.5"
@@ -468,11 +480,12 @@
                             </div>
                             <div class="text-black">
                                 <div class="row mx-3 gap-3">
-                                    <div class="p-4 d-flex flex-column justify-content-center rounded-4 col-md"
+                                    <div class="p-4 d-flex flex-column justify-content-center rounded-4 col-md dark-header dark-border"
                                         style="background-color:#F8EFE2;border: 1px solid #f1e6d5">
                                         <div class="row gap-3">
-                                            <div class="hero-section col p-3 bg-5 rounded-4 d-flex align-items-center">
-                                                <div class="h6 mb-0">
+                                            <div
+                                                class="hero-section col p-3 bg-5 rounded-4 d-flex align-items-center bg-dark-3">
+                                                <div class="h6 mb-0 text-6">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                         fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
                                                         <path
@@ -483,8 +496,9 @@
                                                     <span class="ms-1">智能创作</span>
                                                 </div>
                                             </div>
-                                            <div class="hero-section col p-3 bg-5 rounded-4 d-flex align-items-center">
-                                                <span class="h6 mb-0">
+                                            <div
+                                                class="hero-section col p-3 bg-5 rounded-4 d-flex align-items-center bg-dark-3">
+                                                <span class="h6 mb-0 text-6">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                         fill="currentColor" class="bi bi-universal-access-circle"
                                                         viewBox="0 0 16 16">
@@ -496,8 +510,9 @@
                                                     <span class="ms-1">数字人</span>
                                                 </span>
                                             </div>
-                                            <div class="hero-section col p-3 bg-5 rounded-4 d-flex align-items-center">
-                                                <span class="h6 mb-0">
+                                            <div
+                                                class="hero-section col p-3 bg-5 rounded-4 d-flex align-items-center bg-dark-3">
+                                                <span class="h6 mb-0 text-6">
                                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -510,7 +525,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="p-4 d-flex flex-column rounded-4 col-md"
+                                    <div class="p-4 d-flex flex-column rounded-4 col-md dark-header dark-border"
                                         style="background-color:#EFF7E2;border: 1px solid #e7f0d8">
                                         <div class="d-flex justify-content-center flex-wrap">
                                             <div class="hero-section mx-2" style="width:60px;">
@@ -547,9 +562,9 @@
                 </section>
             </div>
         </div>
-        <footer class="p-5 bg-white text-center mt-5 border-top">
+        <footer class="p-5 bg-white text-center mt-5 border-top dark-header dark-border-top">
             <div class="container">
-                <span class="lead">
+                <span class="lead text-6">
                     Keep the passion and beginner's mind.
                 </span>
             </div>
@@ -610,6 +625,8 @@
     <script type="text/javascript" src="js/plugins/tta-autoplay.min.js"></script>
     <script type="text/javascript" src="js/plugins/tabs.min.js"></script>
     <script type="text/javascript" src="js/plugins/slick.min.js"></script>
+    <!-- 主题 -->
+    <script src="assets/js/theme.js"></script>
 
     <!-- 引入bootstrap.JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

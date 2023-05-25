@@ -975,6 +975,10 @@
     content: "\f0d2"
 }
 
+.fa-Presentation:before {
+    content: "\e904"
+}
+
 .fa-pinterest-square:before {
     content: "\f0d3"
 }

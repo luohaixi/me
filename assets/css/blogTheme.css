@@ -10,6 +10,10 @@
     border-right: 1px solid #333 !important;
 }
 
+.theme-dark .dark-border {
+    border: 1px solid #333 !important;
+}
+
 .theme-dark .dark-border-top {
     border-top: 1px solid #333 !important;
 }
@@ -27,9 +31,34 @@
     color: rgb(255, 255, 255) !important
 }
 
+.theme-dark .text p {
+    color: rgb(255, 255, 255, .6) !important
+}
+
+.theme-dark .text ol li {
+    color: rgb(255, 255, 255, .6) !important
+}
+
+.theme-dark .text svg path {
+    stroke: currentColor;
+    color: rgb(255, 255, 255) !important
+}
+
 .theme-dark .text-6 {
+    fill: currentColor;
     color: rgba(255, 255, 255, .6) !important
 }
+
+.theme-dark .text-6 li {
+    color: rgba(255, 255, 255, .6) !important
+}
+
+.theme-dark .btn-text-6 svg path {
+    stroke: currentColor;
+    color: rgba(255, 255, 255, .6) !important
+}
+
+
 
 .theme-dark .btn-text-6 {
     color: rgba(255, 255, 255, .6) !important
@@ -39,8 +68,16 @@
     color: rgb(255, 255, 255) !important
 }
 
+.theme-dark .btn-text-6 svg:hover {
+    color: rgb(255, 255, 255) !important
+}
+
 .theme-dark .text-3 {
     color: rgba(255, 255, 255, .3) !important
+}
+
+.theme-dark .bg-dark-3 {
+    background-color: rgba(255, 255, 255, .05) !important
 }
 
 .theme-dark .dark-menu-item {
@@ -53,11 +90,7 @@
 }
 
 .theme-dark .icon-color-6:hover {
-    color: rgb(255, 255, 255);
-}
-
-.theme-dark .icon-color {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important
 }
 
 .theme-dark .switch {
@@ -101,7 +134,7 @@
 
 /* 默认样式 */
 .theme-light {
-    background-color: #fafafa;
+    background-color: #ffffff;
 }
 
 .toggle-btn {
@@ -179,6 +212,6 @@ input[type="checkbox"] {
 }
 
 #_1st-toggle-btn input[type="checkbox"]:checked+span:after {
-    background-color: #58b9ff;
+    background-color: #0095FF;
     transform: translate(22px, 0px);
 }

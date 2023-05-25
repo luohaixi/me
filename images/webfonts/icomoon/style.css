@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ri2jlg');
-  src:  url('fonts/icomoon.eot?ri2jlg#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ri2jlg') format('truetype'),
-    url('fonts/icomoon.woff?ri2jlg') format('woff'),
-    url('fonts/icomoon.svg?ri2jlg#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?7vg1pm');
+  src:  url('fonts/icomoon.eot?7vg1pm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7vg1pm') format('truetype'),
+    url('fonts/icomoon.woff?7vg1pm') format('woff'),
+    url('fonts/icomoon.svg?7vg1pm#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,27 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* .icon-call_black_16dp:before {
-  content: "\e901";
-}
-.icon-email_black_16dp:before {
-  content: "\e902";
-}
-.icon-language_black_16dp:before {
-  content: "\e903";
-}
-.icon-gif_black_24dp:before {
-  content: "\e904";
-}
-.icon-bilibili:before {
+.icon-Compass:before {
   content: "\e900";
+  color: #5e718d;
 }
-.icon-dribbble:before {
-  content: "\eaa7";
+.icon-HouseSimple:before {
+  content: "\e901";
+  color: #5e718d;
 }
-.icon-behance2:before {
-  content: "\eaa9";
+.icon-PencilLine:before {
+  content: "\e902";
+  color: #5e718d;
 }
-.icon-github:before {
-  content: "\eab0";
-} */
+.icon-PencilSimple:before {
+  content: "\e903";
+  color: #5e718d;
+}
+.icon-Presentation:before {
+  content: "\e904";
+  color: #5e718d;
+}
+.icon-SmileyMeh:before {
+  content: "\e905";
+  color: #5e718d;
+}
