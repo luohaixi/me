@@ -45,7 +45,6 @@
 }
 
 .theme-dark .text-6 {
-    fill: currentColor;
     color: rgba(255, 255, 255, .6) !important
 }
 
@@ -57,8 +56,6 @@
     stroke: currentColor;
     color: rgba(255, 255, 255, .6) !important
 }
-
-
 
 .theme-dark .btn-text-6 {
     color: rgba(255, 255, 255, .6) !important
@@ -100,6 +97,10 @@
     flex-direction: row;
     justify-content: space-between;
 
+}
+
+.theme-dark .bg-grey {
+    background: linear-gradient(90deg, #292929 28px, transparent 1%) 50%, linear-gradient(#292929 28px, transparent 1%) 50%, #292929;
 }
 
 .theme-dark .btn-check:checked+.btn,
