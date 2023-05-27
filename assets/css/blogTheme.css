@@ -18,6 +18,10 @@
     border-top: 1px solid #333 !important;
 }
 
+.theme-dark .dark-border-bottom {
+    border-bottom: 1px solid #333 !important;
+}
+
 .theme-dark .dark-bg {
     background-color: #1f1f1f;
     border: 1px solid #333 !important;
