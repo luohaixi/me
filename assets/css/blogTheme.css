@@ -28,7 +28,7 @@
 }
 
 .theme-dark .lang-line {
-    color: rgb(51, 51, 51);
+    color: rgba(255, 255, 255, .3);
 }
 
 .theme-dark .text {
@@ -97,6 +97,15 @@
 
 .theme-dark .icon-color-6:hover {
     color: rgb(255, 255, 255) !important
+}
+
+.theme-dark .list-group-item-action:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .h-suntitle span {
+    color: #000;
+    background-color: #FFF;
 }
 
 .theme-dark .switch {
