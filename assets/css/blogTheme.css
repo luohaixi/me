@@ -34,6 +34,9 @@
 .theme-dark .text {
     color: rgb(255, 255, 255) !important
 }
+.theme-dark .text-fill {
+    color: rgb(255, 255, 255) !important
+}
 
 .theme-dark .text p {
     color: rgb(255, 255, 255, .6) !important
@@ -45,6 +48,10 @@
 
 .theme-dark .text svg path {
     stroke: currentColor;
+    color: rgb(255, 255, 255) !important
+}
+.theme-dark .text-fill svg path {
+    fill: currentColor;
     color: rgb(255, 255, 255) !important
 }
 
