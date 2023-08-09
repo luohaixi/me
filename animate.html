@@ -80,9 +80,9 @@
         <div
             class="header-left-wrapper header-left-align-left header-color-style-light border-end dark-header dark-border-end">
             <div class="header-left-logo clearfix">
-                <a class="logo-link logo-text" href="index.html">
+                <a class="logo-link logo-text d-flex align-items-center" href="index.html">
                     <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="60" height="60" rx="30" fill="#F2F2F2" />
+                        <rect width="60" height="60" rx="10" fill="#F2F2F2" />
                         <path
                             d="M43.2018 27.3914C42.9161 25.0486 41.4048 20.221 40.7733 18.4629C42.2018 12.8914 32.7829 9.24853 26.3543 9.6771C20.361 10.0767 15.7018 13.2486 14.4161 16.32C12.559 19.4629 14.4972 27.6119 15.5686 31.1119C13.8093 31.4706 13.093 33.6979 14.559 37.0343C15.5758 39.3485 16.8598 39.6474 17.9258 39.2413C18.0176 39.7831 18.0988 40.8443 18.8578 41.9287C19.3578 42.6429 22.5721 45.8572 25.7733 47.7486C31.3974 51.0715 34.1841 50.6198 36.9875 49.9629C39.5721 49.3572 40.2733 46.6057 41.6304 42.82C42.9875 39.0343 43.9161 36.1771 42.9161 33.8914C41.9161 31.6057 43.559 30.32 43.2018 27.3914Z"
                             fill="white" />
@@ -98,7 +98,7 @@
                         <circle cx="40.5594" cy="30.4629" r="1.42857" fill="#1D1D1F" />
                         <circle cx="41.1441" cy="29.5723" r="0.357954" fill="white" />
                         <circle cx="41.1441" cy="29.5723" r="0.357954" fill="white" />
-                        <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="black" stroke-opacity="0.1" />
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="10" stroke="black" stroke-opacity="0.1" />
                         <defs>
                             <linearGradient id="paint0_linear_13494_28152" x1="20.9762" y1="18.9354" x2="20.0476"
                                 y2="35.7211" gradientUnits="userSpaceOnUse">
@@ -108,7 +108,11 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <span class="text" style="font-size:.6em;font-weight: 600;">Haixi's blog</span>
+                    <div class="text ms-2">
+                        <div style="font-size: 0.6em;font-weight: 600;">Haixi's blog</div>
+                        <div style="font-size: 0.25em;font-weight: 300;">UI Designer</div>
+                    </div>
+
                 </a>
 
                 <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -198,11 +202,11 @@
     </header>
 
     <div class="p-5 content-block stick-to-footer">
-        <div class="page-container container max-width" style="margin:0 auto; max-width: 500px; ">
+        <div class="page-container container max-width text" style="margin:0 auto; max-width: 768px; ">
             <!-- 展示主体 -->
             <div class="mb-5 py-5 border-bottom dark-border-bottom">
                 <h2 class="text">
-                    动效设计的作用及意义
+                    可交互动效设计
                 </h2>
                 <!--辅助信息-->
                 <div class="article-read-panel" data-v-0735ec40="">
@@ -216,17 +220,63 @@
                     </div>
                 </div>
             </div>
-            <div class="p-3 bg-light rounded-5 dark-header">
-                <canvas id="canvas" class="w-100 rounded-4" width="800" height="800"></canvas>
+            <div class="py-2 bg-light rounded-4 dark-header">
+                <div style="margin:0 auto; max-width: 500px; max-height: 500px; ">
+                    <canvas id="canvas" class="w-100 rounded-4" width="800" height="800"></canvas>
+                </div>
             </div>
 
 
+            <p></p>
+            <p><br></p>
+            <p></p>
+            <h4><strong>1. 可交互动效实现（设计侧）</strong></h4>
+            <p class="card-text">
+                比如我们在iOS手机查看相册时，轻触照片，照片会从列表中的位置放大，这样就建立了放大的照片与列表中缩略图的联系，用户能很确信现在打开的照片就是刚刚自己点击那张，相应的，点击返回，照片就会缩回到列表上的位置，这个过程就能指引用户找到浏览的位置。试想如果不采用这样的缩放动效，而是从一个方向进出，就建立不了照片与列表之间的联系
+            </p>
+            <figure contenteditable="false" class="img-box loaded">
+
+                <img src="picture/rive-part-one.png" alt="" style="width: 100%; ">
+                <figcaption class="caption" contenteditable="false"></figcaption>
+            </figure>
+            <figure contenteditable="false" class="img-box loaded">
+
+                <img src="picture/rive-part-three.png" alt="" style="width: 100%; ">
+                <figcaption class="caption" contenteditable="false"></figcaption>
+            </figure>
+            <p><br></p>
+            <p></p>
+            <h4><strong>2. 高效实现可交互形式(研发侧)</strong></h4>
+            <p class="card-text">
+                Rive 文件的大小只是视频、GIF、图像序列或基于 JSON 的格式的一小部分。无论您是捆绑动画还是远程交付动画，优化的格式都有助于保持您的应用程序较小。
+            </p>
+            <figure contenteditable="false" class="img-box loaded">
+
+                <img src="picture/rive-part-two.png" alt="" style="width: 100%; ">
+                <figcaption class="caption" contenteditable="false"></figcaption>
+            </figure>
+            <figure contenteditable="false" class="img-box loaded">
+
+                <img src="picture/rive-github.png" alt="" style="width: 100%; ">
+                <figcaption class="caption" contenteditable="false"></figcaption>
+            </figure>
+
         </div>
+ 
 
     </div>
+    <footer class="p-5 bg-white text-center mt-5 border-top dark-header dark-border-top">
+        <div class="container">
+            <span class="lead text-6">
+                Keep the passion and beginner's mind.
+            </span>
+        </div>
+    </footer>
 
     <!-- 主题 -->
     <script src="assets/js/theme.js"></script>
+
+    <!-- 引入rive动画文件 -->
     <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
     <script>
         const r = new rive.Rive({
@@ -239,6 +289,8 @@
             },
         });
     </script>
+
+
 </body>
 
 </html>
