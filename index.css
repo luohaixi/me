@@ -22,7 +22,7 @@
 
 .elemen-card {
     backdrop-filter: saturate(180%) blur(6px);
-    background: #fafafa;
+    background: #fff;
     /* border-radius: 0px; */
     border: 1px solid rgba(0, 0, 0, 0.05);
     transition: .3s cubic-bezier(.165, .84, .44, 1);
@@ -93,7 +93,7 @@
 
 .dark-menu-item {
     border: 1px solid #ebebeb;
-    background-color: #f1f1f1;
+    background-color: #fafafa;
 }
 
 .bg-6 {
