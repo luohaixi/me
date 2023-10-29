@@ -695,6 +695,10 @@ progress {
     .container-sm {
         max-width: 540px
     }
+
+    .body-expand-sm {
+        height: 100vh;
+    }
 }
 
 @media (min-width:768px) {
