@@ -160,6 +160,10 @@
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.theme-dark .left-side-header .header-left-menu-toggle {
+    color: #fff;
+}
+
 /* 默认样式 */
 .theme-light {
     background-color: #ffffff;

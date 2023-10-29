@@ -88,7 +88,7 @@
 		display: table;
 	}
 	header.left-side-header .header-left-logo {
-		margin: 15px 0;
+		padding: 15px 0;
 		text-align: left!important;
 	}
 	header.left-side-header .social-icons-wrapper {

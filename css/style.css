@@ -777,7 +777,7 @@ header.left-side-header .logo-link.logo-text {
 }
 
 header.left-side-header .header-left-logo {
-    margin: 30px 0 50px;
+    padding: 30px 0 50px;
 }
 
 header.left-side-header .header-left-search {
