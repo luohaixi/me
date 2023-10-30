@@ -400,9 +400,13 @@ License: https://themeforest.net/licenses/standard
 }
 
 @media (min-width: 992px) {
+
+
   .border-lg {
     border: 1px solid #d8dde6 !important
   }
+
+
 
   .border-top-lg {
     border-top: 1px solid #d8dde6 !important

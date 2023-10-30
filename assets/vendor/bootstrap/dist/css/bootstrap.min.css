@@ -718,6 +718,10 @@ progress {
     .container-sm {
         max-width: 960px
     }
+
+    .header-left-wrapper {
+        position: fixed;
+    }
 }
 
 @media (min-width:1200px) {
@@ -2256,6 +2260,10 @@ progress {
     .table-responsive-lg {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
+    }
+
+    .social-icons-wrapper {
+        display: none;
     }
 }
 

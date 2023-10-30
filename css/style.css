@@ -708,7 +708,7 @@ body.enable-left-header .header-left-wrapper {
     bottom: 0;
     /* box-shadow: 1px 0 6px rgba(0, 0, 0, 0.1); */
     left: 0;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 256px;
     padding-left: 30px;
