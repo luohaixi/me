@@ -4428,7 +4428,7 @@ fieldset:disabled .btn {
 }
 
 .h-suntitle {
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 
 .header-title {
@@ -7036,6 +7036,10 @@ fieldset:disabled .btn {
         background-clip: padding-box;
         outline: 0;
         transition: transform .3s ease-in-out
+    }
+
+    .placeholder-glow {
+        margin: 10rem 0;
     }
 }
 
