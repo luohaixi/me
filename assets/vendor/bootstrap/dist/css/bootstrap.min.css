@@ -699,6 +699,12 @@ progress {
     .body-expand-sm {
         height: 100vh;
     }
+
+    .logo-link {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 @media (min-width:768px) {
@@ -975,6 +981,7 @@ progress {
 }
 
 @media (min-width:576px) {
+
     .col-sm {
         flex: 1 0 0%
     }
