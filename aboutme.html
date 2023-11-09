@@ -70,12 +70,12 @@
 
         .photoofcolorado {
             position: absolute;
-            left: -25%;
-            top: 42%;
+            left: -35%;
+            top: 20%;
             right: auto;
             bottom: auto;
             z-index: 5;
-            width: 40%;
+            width: 50%;
         }
 
         .kaithecat {
@@ -91,11 +91,11 @@
 </head>
 
 
-<body class="home page-template-default page page-id-19 enable-progressbar enable-left-header responsive  bg-light">
+<body class="home page-template-default page page-id-19 enable-progressbar enable-left-header responsive bg-light">
     <div class="header-progressbar">
         <div class="header-progressbar-under-bar"></div>
     </div>
-    <header class="left-side-header">
+    <header class="left-side-header fixed-top">
         <div class="header-left-wrapper header-left-align-left border-end dark-header dark-border-end">
             <div class="header-left-logo clearfix">
                 <a class="logo-link logo-text d-flex align-items-center" href="index.html">
@@ -131,32 +131,9 @@
                         <div style="font-size: 0.6em;font-weight: 600;">Haixi's blog</div>
                         <div style="font-size: 0.4em;font-weight: 300;">UI Designer</div>
                     </div>
-
                 </a>
                 <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
-                <div class="social-icons-wrapper position-absolute bottom-0 d-flex align-items-center">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
-                                <i class="fa fa-github icon-color-6"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.com/haixiluo/" target="_blank" class="a-pinterest">
-                                <i class="fa fa-pinterest icon-color-6"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://dribbble.com/luohaixi/shots" target="_blank" class="a-dribbble">
-                                <i class="fa fa-dribbble icon-color-6"></i></a>
-                        </li>
-                    </ul>
-                    <section class="switch">
-                        <div class="toggle-btn" id="_1st-toggle-btn">
-                            <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
-                            <span></span>
-                        </div>
-                    </section>
-                </div>
             </div>
 
             <div class="header-left-menu-wrapper menu-uppercase menu-font-weight-bold">
@@ -212,14 +189,35 @@
                     </ul>
                 </div>
             </div>
-
+            <div class="social-icons-wrapper position-absolute bottom-0 d-flex align-items-center">
+                <ul>
+                    <li>
+                        <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
+                            <i class="fa fa-github icon-color-6"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/haixiluo/" target="_blank" class="a-pinterest">
+                            <i class="fa fa-pinterest icon-color-6"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/luohaixi/shots" target="_blank" class="a-dribbble">
+                            <i class="fa fa-dribbble icon-color-6"></i></a>
+                    </li>
+                </ul>
+                <section class="switch">
+                    <div class="toggle-btn" id="_1st-toggle-btn">
+                        <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
+                        <span></span>
+                    </div>
+                </section>
+            </div>
         </div>
     </header>
 
     <div class="content-block stick-to-footer ">
         <div class="position-absolute top-0 w-100" style="background: linear-gradient(90deg, #1664FF 0%, #16A6FF 100%);  height: 220px;z-index: -1;
         "></div>
-        <div class="page-container container container-resume" style="padding-top: 96px;">
+        <div class="page-container container" style="padding-top: 60px;">
             <!-- 展示主体 -->
             <section class="py-5 rounded-4 bg-white dark-header">
                 <div class="container px-5">
@@ -251,10 +249,10 @@
                     </div>
                 </div>
             </section>
-            <section class="text-center text-sm-start">
+            <section class="py-5 text-center text-sm-start">
                 <div class="container m-sm-5">
                     <div class="d-flex justify-content-center">
-                        <div class="p-sm-5 d-md-block position-relative" style="width:45%;">
+                        <div class="p-md-5 d-md-block position-relative" style="width:50%;">
                             <img src="picture/aboutme/portrait-1.png" alt="" class="rounded-3 img-fluid hero-section">
                             <img src=" picture/aboutme/lands-end.png" alt=""
                                 class="position-absolute hawaiiphoto rounded-3 hero-section">
