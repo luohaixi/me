@@ -700,10 +700,7 @@ progress {
         height: 100vh;
     }
 
-    .logo-link {
-        display: flex;
-        align-items: center;
-    }
+    
 
 }
 
@@ -729,6 +726,14 @@ progress {
         position: fixed;
     }
 }
+
+@media (min-width:1024px) {
+    .logo-link {
+        display: flex;
+        align-items: center;
+    }
+}
+
 
 @media (min-width:1200px) {
 

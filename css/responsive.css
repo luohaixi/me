@@ -79,6 +79,7 @@
 		position: relative;
 		top: 0;
 		width: 100%;
+
 		/* padding-bottom: 10px;*/
 	}
 
@@ -316,6 +317,10 @@
 
 	.mgt-header-block.mgt-header-block-fontsize-large .mgt-header-block-title {
 		font-size: 48px;
+	}
+
+	.block-element {
+		display: none;
 	}
 }
 

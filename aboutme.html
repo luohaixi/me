@@ -98,7 +98,7 @@
     <header class="left-side-header fixed-top">
         <div class="header-left-wrapper header-left-align-left border-end dark-header dark-border-end">
             <div class="header-left-logo clearfix">
-                <a class="logo-link logo-text d-flex align-items-center" href="index.html">
+                <a class="logo-link logo-text" href="index.html">
                     <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="60" height="60" rx="10" fill="#F2F2F2" />
                         <path
@@ -127,12 +127,14 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <div class="text ms-2">
+                    <div class="text ms-2 block-element">
                         <div style="font-size: 0.6em;font-weight: 600;">Haixi's blog</div>
                         <div style="font-size: 0.4em;font-weight: 300;">UI Designer</div>
                     </div>
                 </a>
-                <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="header-left-menu-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
 
             </div>
 
@@ -190,7 +192,7 @@
                 </div>
             </div>
             <div class="social-icons-wrapper position-absolute bottom-0 d-flex align-items-center">
-                <ul>
+                <ul class="block-element">
                     <li>
                         <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
                             <i class="fa fa-github icon-color-6"></i></a>
@@ -204,12 +206,12 @@
                             <i class="fa fa-dribbble icon-color-6"></i></a>
                     </li>
                 </ul>
-                <section class="switch">
+                <div class="switch">
                     <div class="toggle-btn" id="_1st-toggle-btn">
                         <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
                         <span></span>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </header>
@@ -242,7 +244,7 @@
                                     喜欢探索技术并与人建立联系，比如3D实时渲染、可互动动画，让用户与界面内容产生互动是我一直感兴趣的方向
                                 </li>
                                 <li class="mb-2"> 习惯每天自学一些技术或浏览网站确保我始终向前，目前AI绘画是我最感兴趣的领域 </li>
-                                <li class="mb-2"> 熟练掌握ChatGPT解决复杂问题，熟练使用Midjourney赋能设计 </li>
+                                <li class="mb-2"> 熟练掌握ChatGPT解决复杂问题，熟练使用Midjourney提升设计效率 </li>
                                 <li class="mb-2"> 喜欢在空闲时间摄影或运动，如篮球或徒步旅行等...</li>
                             </ul>
                         </div>
@@ -250,7 +252,7 @@
                 </div>
             </section>
             <section class="py-5 text-center text-sm-start">
-                <div class="container m-sm-5">
+                <div class="container my-sm-5">
                     <div class="d-flex justify-content-center">
                         <div class="p-md-5 d-md-block position-relative" style="width:50%;">
                             <img src="picture/aboutme/portrait-1.png" alt="" class="rounded-3 img-fluid hero-section">
@@ -270,9 +272,9 @@
                             <div class="h4">关于我的工作</div>
                             <div class="my-4 text">
                                 <p class="text-black-50 mb-2">2020 , 6 - 至今/北京小米</p>
-                                <p class="h5">
+                                <h5 class="h5">
                                     用户体验设计师 | 天星数字科技有限公司
-                                </p>
+                                </h5>
                             </div>
                             <div class="my-4">
                                 <ul class="text-6">
@@ -326,17 +328,17 @@
                         <div class="col-xl p-5 text">
                             <div class="h4">我的优势</div>
                             <div class="my-4">
-                                <div class="text-black-50 mb-2 text-6">2020 , 6 - 至今/北京小米</div>
-                                <p class="h5">多领域的设计技能</p>
+                                <!-- <div class="text-black-50 mb-2 text-6">2020 , 6 - 至今/北京小米</div> -->
+                                <h5 class="">多领域的设计技能</h5>
                                 <p class="mb-4 text-black-50">
                                     设计技能覆盖了UI设计、网页设计、动效设计和3D建模渲染等多个领域，可以综合运用不同的设计技能来解决问题。
                                 </p>
                                 <div class="my-4">
-                                    <p class="h5">对用户体验的重视</p>
+                                    <h5 class="h5">对用户体验的重视</h5>
                                     <p class="mb-4 text-black-50">
                                         专注于用户体验，并将技术与人联系起来，尤其是在3D实时渲染和互动动画方面，能够提供更优秀的用户体验。
                                     </p>
-                                    <p class="h5">学习的热情和不断进取的态度</p>
+                                    <h5 class="h5">学习的热情和不断进取的态度</h5>
                                     <p class="mb-4 text-black-50">
                                         对设计行业充满热情，并保持不断学习新技术的态度，具备跟上行业发展并保持前沿的能力。喜欢摄影、视频拍摄和各种运动，这种积极向上的生活态度可以帮助我更好地应对挑战。
                                     </p>
@@ -348,12 +350,13 @@
             </section>
 
             <!-- 联系我 -->
-            <section class="p-3 mx-3 bg-white rounded-4 dark-header">
+            <section class="p-3 mx-sm-3 bg-white rounded-4 dark-header">
                 <div class="container">
-                    <div class="row p-5 align-items-center">
+                    <div class="row p-5 g-3 align-items-center">
                         <div class="text-center text">
-                            <div class="h2" style="font-size:5em ;">聊一下<br><svg width="60" height="60"
-                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="h2" style="font-size:5vh ;">聊一下<br>
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M18 8H19C20.0609 8 21.0783 8.42143 21.8284 9.17157C22.5786 9.92172 23 10.9391 23 12C23 13.0609 22.5786 14.0783 21.8284 14.8284C21.0783 15.5786 20.0609 16 19 16H18"
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
@@ -371,13 +374,12 @@
                                 </svg>
                             </div>
                         </div>
-                        <span class="hero-section text-center ">
-
+                        <div class="hero-section text-center ">
                             <a href="mailto:luohaixi@qq.com?subject=test&cc=抄送人邮箱&subject=主题&body=内容"
                                 class="fs-5 p-3 rounded-4 btn-text-6 dark-menu-item">
                                 <i class="fa fa-envelope fs-5 me-1"></i>
                                 Send over an email</a>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -385,7 +387,7 @@
 
         <footer class="p-5 bg-white text-center mt-5 border-top dark-header dark-border-top">
             <div class="container">
-                <span class="lead text-6">
+                <span class="text-6">
                     Keep the passion and beginner's mind.
                 </span>
             </div>
