@@ -700,7 +700,7 @@ progress {
         height: 100vh;
     }
 
-    
+
 
 }
 
@@ -728,12 +728,25 @@ progress {
 }
 
 @media (min-width:1024px) {
-    .logo-link {
+
+    /* .logo-link {
         display: flex;
         align-items: center;
+    } */
+    header.left-side-header .header-left-logo {
+        padding: 0px 0 50px;
     }
 }
 
+@media (max-width:1024px) {
+    .content-block {
+        margin-top: 72px;
+    }
+
+    header.header-left-wrapper {
+        padding: 15px;
+    }
+}
 
 @media (min-width:1200px) {
 
@@ -7023,7 +7036,7 @@ fieldset:disabled .btn {
 .offcanvas-xl,
 .offcanvas-xxl {
     --bs-offcanvas-zindex: 1045;
-    --bs-offcanvas-width: 400px;
+    --bs-offcanvas-width: 256px;
     --bs-offcanvas-height: 30vh;
     --bs-offcanvas-padding-x: 1rem;
     --bs-offcanvas-padding-y: 1rem;

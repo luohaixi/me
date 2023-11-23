@@ -67,9 +67,8 @@
         <div class="header-progressbar-under-bar"></div>
     </div>
     <header class="left-side-header fixed-top">
-        <div
-            class="header-left-wrapper header-left-align-left header-color-style-light border-end dark-header dark-border-end">
-            <div class="header-left-logo clearfix">
+        <div class="header-left-wrapper header-left-align-left border-end p-3 dark-header dark-border-end">
+            <div class="header-left-logo clearfix d-flex">
                 <a class="logo-link logo-text d-flex align-items-center" href="index.html">
                     <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="60" height="60" rx="10" fill="#F2F2F2" />
@@ -81,16 +80,17 @@
                             fill="#1D1D1F" />
                         <path
                             d="M22.7829 18.6057C21.7115 20.32 21.6304 21.9629 22.4161 24.6057C21.0552 25.3584 17.9048 27.721 20.4762 32.5782L19.5476 33.221C18.7521 32.1245 17.2425 30.2817 15.5686 31.1119C14.4972 27.6119 12.559 19.4628 14.4161 16.32C15.7018 13.2486 20.361 10.0766 26.3543 9.67709C32.7829 9.24852 42.2018 13.1771 40.7733 18.7486C31.9972 18.7486 30.9753 17.9701 26.7018 17.32C24.3543 16.9628 23.2591 17.9866 22.7829 18.6057Z"
-                            fill="url(#paint0_linear_13494_28152)" />
+                            fill="url(#paint0_linear_14100_24201)" />
                         <circle cx="31.1306" cy="30.8914" r="1.85714" fill="#1D1D1F" />
                         <circle cx="30.6437" cy="29.643" r="0.571429" fill="white" />
                         <circle cx="30.6437" cy="29.643" r="0.571429" fill="white" />
                         <circle cx="40.5594" cy="30.4629" r="1.42857" fill="#1D1D1F" />
                         <circle cx="41.1441" cy="29.5723" r="0.357954" fill="white" />
                         <circle cx="41.1441" cy="29.5723" r="0.357954" fill="white" />
-                        <rect x="0.5" y="0.5" width="59" height="59" rx="10" stroke="black" stroke-opacity="0.1" />
+                        <rect x="25" y="25" width="22" height="9" fill="#0066FF" fill-opacity="0.7" />
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="9.5" stroke="black" stroke-opacity="0.1" />
                         <defs>
-                            <linearGradient id="paint0_linear_13494_28152" x1="20.9762" y1="18.9354" x2="20.0476"
+                            <linearGradient id="paint0_linear_14100_24201" x1="20.9762" y1="18.9354" x2="20.0476"
                                 y2="35.7211" gradientUnits="userSpaceOnUse">
                                 <stop stop-color="#1D1D1F" />
                                 <stop offset="0.242831" stop-color="#2C2C2D" stop-opacity="0.61388" />
@@ -98,19 +98,24 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <div class="text ms-2"><div style="font-size: 0.6em;font-weight: 600;">Haixi's blog</div>
-                    <div style="font-size: 0.4em;font-weight: 300;">UI Designer</div>
+                    <div class="text ms-2">
+                        <div style="font-size: 0.6em;font-weight: 600;">Haixi's blog</div>
+                        <div style="font-size: 0.4em;font-weight: 300;">UI Designer</div>
                     </div>
-
                 </a>
-                <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="header-left-menu-toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
+
             <div class="header-left-menu-wrapper menu-uppercase menu-font-weight-bold">
                 <div class="menu-header-left-menu-container">
-                    <ul id="menu-header-left-menu" class="header-left-menu">
+                    <ul class="header-left-menu">
                         <li class="menu-item menu-item-home current-menu-item current_page_item">
-                            <a href="index.html" class="btn-text-6"><svg width="19" height="19" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="index.html" class="btn-text-6">
+                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M17.2665 5.64924C19.8688 4.9411 21.8177 5.00414 22.3927 6C23.4282 7.7936 19.6149 11.9339 13.8754 15.2476C8.13587 18.5613 2.64362 19.7936 1.60808 18C1.03322 17.0043 1.95266 15.2854 3.86639 13.3862M20.2504 12C20.2504 16.5563 16.5567 20.25 12.0004 20.25C7.44404 20.25 3.75039 16.5563 3.75039 12C3.75039 7.44365 7.44404 3.75 12.0004 3.75C16.5567 3.75 20.2504 7.44365 20.2504 12Z"
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
@@ -133,53 +138,51 @@
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>专业设计</a></li>
-                        <li class="menu-item"><a href="about.html" class="dark-menu-item text-fill">
-                                <svg width="21" height="21" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM16.0057 8.24964L13.5909 13.591L8.48203 15.7805C8.31608 15.8516 8.1483 15.6838 8.21942 15.5179L10.409 10.409L15.7407 7.98518C15.9087 7.90879 16.0817 8.08143 16.0057 8.24964Z"
-                                        fill="#212121" />
-                                </svg>
-
-                                未来发展</a></li>
-                        <li class="menu-item" onclick="window.location='aboutme.html'"><a href="#" class="btn-text-6">
+                        <li class="menu-item"><a href="about.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <path d="M8 15H16" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                                    <path
+                                        d="M16.2398 7.76001L14.1198 14.12L7.75977 16.24L9.87977 9.88001L16.2398 7.76001Z"
+                                        stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <path d="M9 9H9.01" stroke="#212121" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M15 9H15.01" stroke="#212121" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>个人说明书</a></li>
+                                </svg>未来发展</a></li>
+                        <li class="menu-item" onclick="window.location='aboutme.html'"><a href="#"
+                                class="dark-menu-item text-fill">
+                                <svg width="21" height="21" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM8 15C8 14.5582 8.37702 14.2 8.84211 14.2H15.1579C15.623 14.2 16 14.5582 16 15C16 15.4418 15.623 15.8 15.1579 15.8H8.84211C8.37702 15.8 8 15.4418 8 15ZM9.75 10.125C9.75 10.7463 9.24632 11.25 8.625 11.25C8.00368 11.25 7.5 10.7463 7.5 10.125C7.5 9.50368 8.00368 9 8.625 9C9.24632 9 9.75 9.50368 9.75 10.125ZM16.5 10.125C16.5 10.7463 15.9963 11.25 15.375 11.25C14.7537 11.25 14.25 10.7463 14.25 10.125C14.25 9.50368 14.7537 9 15.375 9C15.9963 9 16.5 9.50368 16.5 10.125Z"
+                                        fill="#212121" />
+                                </svg>
+                                个人说明书</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="social-icons-wrapper  position-absolute bottom-0 d-flex align-items-center">
-                <ul>
+            <div class="social-icons-wrapper header-bottom-menu-toggle-icons d-flex align-items-cente block-element">
+                <ul class="block-element">
                     <li>
                         <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
-                            <i class="fa fa-github icon-color-6"></i></a>
+                            <i class="fa fa-github icon-color-6 p-2"></i></a>
                     </li>
                     <li>
                         <a href="https://www.pinterest.com/haixiluo/" target="_blank" class="a-pinterest">
-                            <i class="fa fa-pinterest icon-color-6"></i></a>
+                            <i class="fa fa-pinterest icon-color-6 p-2"></i></a>
                     </li>
                     <li>
                         <a href="https://dribbble.com/luohaixi/shots" target="_blank" class="a-dribbble">
-                            <i class="fa fa-dribbble icon-color-6"></i></a>
+                            <i class="fa fa-dribbble icon-color-6 p-2"></i></a>
                     </li>
                 </ul>
-                <section class="switch">
+                <div class="switch block-element">
                     <div class="toggle-btn" id="_1st-toggle-btn">
                         <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
                         <span></span>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </header>

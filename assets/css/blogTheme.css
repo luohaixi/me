@@ -118,7 +118,7 @@
 }
 
 .theme-dark .switch {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0);
     border-radius: 35px;
     display: flex;
     flex-direction: row;

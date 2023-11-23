@@ -66,9 +66,8 @@
         <div class="header-progressbar-under-bar"></div>
     </div>
     <header class="left-side-header fixed-top">
-        <div
-            class="header-left-wrapper header-left-align-left header-color-style-light border-end dark-header dark-border-end">
-            <div class="header-left-logo clearfix">
+        <div class="header-left-wrapper header-left-align-left border-end p-3 dark-header dark-border-end">
+            <div class="header-left-logo clearfix d-flex">
                 <a class="logo-link logo-text d-flex align-items-center" href="index.html">
                     <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="60" height="60" rx="10" fill="#F2F2F2" />
@@ -103,7 +102,10 @@
                     </div>
 
                 </a>
-                <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="header-left-menu-toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
             <div class="header-left-menu-wrapper menu-uppercase menu-font-weight-bold">
                 <div class="menu-header-left-menu-container">
@@ -167,27 +169,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="social-icons-wrapper position-absolute bottom-0 d-flex align-items-center">
-                <ul class="">
+            <div class="social-icons-wrapper header-bottom-menu-toggle-icons d-flex align-items-cente block-element">
+                <ul class="block-element">
                     <li>
                         <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
-                            <i class="fa fa-github icon-color-6"></i></a>
+                            <i class="fa fa-github icon-color-6 p-2"></i></a>
                     </li>
                     <li>
                         <a href="https://www.pinterest.com/haixiluo/" target="_blank" class="a-pinterest">
-                            <i class="fa fa-pinterest icon-color-6"></i></a>
+                            <i class="fa fa-pinterest icon-color-6 p-2"></i></a>
                     </li>
                     <li>
                         <a href="https://dribbble.com/luohaixi/shots" target="_blank" class="a-dribbble">
-                            <i class="fa fa-dribbble icon-color-6"></i></a>
+                            <i class="fa fa-dribbble icon-color-6 p-2"></i></a>
                     </li>
                 </ul>
-                <section class="switch">
+                <div class="switch block-element">
                     <div class="toggle-btn" id="_1st-toggle-btn">
                         <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
                         <span></span>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </header>
@@ -222,168 +224,117 @@
                             <li class="list-group-item mb-3 w-100">
                                 <div class="border-0 mb-2">
                                     <a href="https://zaxx4r4j84.feishu.cn/docx/NtQBdDfbholo8BxVgTPcYxe8nBd"
-                                        target="_blank" class="d-flex hero-section">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/rive.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
+                                        target="_blank" class="hero-section">
+                           
+                                            <div class="card-body text">
                                                 <h4 class="card-title mb-2">Rive vs
                                                     Lottie哪个更适合你的动效设计？</h4>
                                                 <p class="card-text">
                                                     对于设计来说动效并非是动那么简单，然而界面中的动效不是独立存在的“花瓶”，而是服务于人机交互的重要元素。</p>
 
                                             </div>
-                                        </div>
+                     
                                     </a>
                                 </div>
                             </li>
                             <li class="list-group-item mb-3 w-100">
                                 <div class="border-0 mb-2">
-                                    <div class="d-flex hero-section" onclick="window.location='lottie.html'">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/lottie.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
+                                    <div class="hero-section" onclick="window.location='lottie.html'">
+
+                                            <div class="card-body text">
                                                 <h4 class="card-title mb-2">Lottie插件：一种更优秀的动效实现方式</h4>
                                                 <p class="card-text">
                                                     对于设计来说动效并非是动那么简单，然而界面中的动效不是独立存在的“花瓶”，而是服务于人机交互的重要元素。</p>
                                             </div>
-                                        </div>
+                    
                                     </div>
                                 </div>
                             </li>
                             <li class="list-group-item mb-3 w-100">
                                 <div class="border-0 mb-2">
-                                    <div class="d-flex hero-section" onclick="window.location='动效与互动.html'">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/list-1.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
+                                    <div class="hero-section" onclick="window.location='动效与互动.html'">
+                     
+                                            <div class="card-body text">
                                                 <h4 class="card-title mb-2">动效与互动</h4>
                                                 <p class="card-text">
                                                     对于设计来说动效并非是动那么简单，然而界面中的动效不是独立存在的“花瓶”，而是服务于人机交互的重要元素。</p>
 
                                             </div>
-                                        </div>
+                                     
                                     </div>
                                 </div>
                             </li>
                             <li class="list-group-item mb-3 w-100">
                                 <div class="border-0 mb-2">
-                                    <div class="d-flex hero-section" onclick="window.location='合情合理.html'">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/list-2.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
+                                    <div class="hero-section" onclick="window.location='合情合理.html'">
+          
+                                            <div class="card-body text">
                                                 <h4 class="card-title mb-2">如何设计合情合理的交互动效</h4>
                                                 <p class="card-text">
                                                     什么样的情景设计什么样的动效，以及动效设计需要符合我们所感知的物理世界的运动规律。
                                                 </p>
                                             </div>
-                                        </div>
+                            
                                     </div>
                                 </div>
                             </li>
                             <li class="list-group-item mb-3 w-100">
                                 <div class="border-0 mb-2">
                                     <a href="https://mp.weixin.qq.com/s/3CYCwgk8VKp6Hkk3lMA68Q" target="_blank"
-                                        class="d-flex hero-section">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/贝塞尔曲线.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
+                                        class="hero-section">
+                                    
+                                            <div class="card-body text">
                                                 <h4 class="card-title mb-2">动效的质感表达</h4>
                                                 <p class="card-text">
                                                     通过对动效细节的把控去创造真实自然的动态体验，并且根据品牌特性建立动态理念。
                                                 </p>
                                             </div>
-                                        </div>
+                            
                                     </a>
                                 </div>
                             </li>
                             <li class="list-group-item mb-3 w-100">
                                 <div class="border-0 mb-2">
-                                    <div class="d-flex hero-section" onclick="window.location='Disney Animation.html'">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/12原则.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
+                                    <div class="hero-section" onclick="window.location='Disney Animation.html'">
+
+                                     
+                                            <div class="card-body text">
                                                 <h4 class="card-title mb-2">迪士尼动画原则在UI动效中的应用</h4>
                                                 <p class="card-text">
                                                     经常可以看到在日常用户界面设计中使用的迪士尼经典动画设计原理，这样极大的增强了交互界面的可用性。
                                                 </p>
                                             </div>
-                                        </div>
+      
                                     </div>
                                 </div>
                             </li>
-                            <!-- <li class="list-group-item">
-                                <div class="fs-1 text-black-50 text-6">2021</div>
-                            </li> -->
+
                             <li class="list-group-item mb-3 w-100">
                                 <div class="border-0 mb-2">
-                                    <div class="d-flex hero-section" onclick="window.location='动效落地.html'">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/动效落地.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
+                                    <div class="hero-section" onclick="window.location='动效落地.html'">
+                      
+                                            <div class="card-body text">
                                                 <h4 class="card-title mb-2">常见动效落地方法</h4>
                                                 <p class="card-text">
                                                     界面动效并不是一种单独为了炫技的东西，除了设计以为，还需要考虑页面性能等因素。
                                                 </p>
                                             </div>
-                                        </div>
+                        
                                     </div>
                                 </div>
                             </li>
+
                             <li class="list-group-item mb-3 w-100">
                                 <div class="border-0 mb-2">
-                                    <a href="https://zaxx4r4j84.feishu.cn/docs/doccnTyYCE6uYcUvgEAQel3Ez6f#BedJOg"
-                                        target="_blank" class="d-flex hero-section">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/动效类型.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
-                                                <h4 class="card-title mb-2">格式塔原则在UI设计中的运用</h4>
-                                                <p class="card-text">
-                                                    根据格式塔心理学家的说法，这些原则的存在是因为大脑的内在倾向是根据规则看到刺激中的模式。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="list-group-item mb-3 w-100">
-                                <div class="border-0 mb-2">
-                                    <div class="d-flex hero-section" onclick="window.location='作用及意义.html'">
-                                        <!-- <div class="" style="width:160px;">
-                                            <img src="picture/title_page/动效作用png.png" class="rounded" alt="..."
-                                                style="width:100%">
-                                        </div> -->
-                                        <div class="d-flex flex-wrap align-content-center">
-                                            <div class="card-body p-sm-3 text">
+                                    <div class="hero-section" onclick="window.location='作用及意义.html'">
+
+                                            <div class="card-body text">
                                                 <h4 class="card-title mb-2">动效设计的作用及意义</h4>
                                                 <p class="card-text">
                                                     在有些时候，动效很容易被想象成某种为了增加愉悦性质的内容，其本身并不具备价值，因此常常被当做可有可无的部分。
                                                 </p>
                                             </div>
-                                        </div>
+          
                                     </div>
                                 </div>
                             </li>
@@ -443,6 +394,66 @@
                                     <div class="card-body text">
                                         <h4 class="card-title">四项国际设计大奖</h4>
                                         <p class="card-text">在产品设计理念上，坚持创新和普惠金融理念，推出简约实惠的银行产品</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        Link with href
+                    </a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">学习沉淀</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">专业设计</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">未来发展</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">个人说明书</a>
+
+                                </li>
+                            </ul>
+                            <div class="social-icons-wrapper header-bottom-menu-toggle-icons d-flex align-items-center">
+                                <ul class="">
+                                    <li>
+
+                                        <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
+                                            <i class="fa fa-github icon-color-6 p-2"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.pinterest.com/haixiluo/" target="_blank"
+                                            class="a-pinterest">
+                                            <i class="fa fa-pinterest icon-color-6 p-2"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://dribbble.com/luohaixi/shots" target="_blank"
+                                            class="a-dribbble">
+                                            <i class="fa fa-dribbble icon-color-6 p-2"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="switch">
+                                    <div class="toggle-btn" id="_1st-toggle-btn">
+                                        <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
+                                        <span></span>
                                     </div>
                                 </div>
                             </div>
