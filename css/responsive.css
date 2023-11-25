@@ -72,15 +72,13 @@
 
 	body.enable-left-header .header-left-wrapper {
 		bottom: 0;
-		box-shadow: none;
+		box-shadow: inset 0 -1px 0 0 #eaeaea;
 		left: 0;
 		padding-left: 30px;
 		padding-right: 30px;
 		position: relative;
 		top: 0;
 		width: 100%;
-
-		/* padding-bottom: 10px;*/
 	}
 
 	body.enable-left-header .row[data-vc-full-width="true"] {

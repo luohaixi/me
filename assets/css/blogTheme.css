@@ -10,6 +10,10 @@
     border-right: 1px solid #333 !important;
 }
 
+.theme-dark .dark-border-bottom {
+    border-bottom: 1px solid #333 !important;
+}
+
 .theme-dark .dark-border {
     border: 1px solid #333 !important;
 }
@@ -18,9 +22,6 @@
     border-top: 1px solid #333 !important;
 }
 
-.theme-dark .dark-border-bottom {
-    border-bottom: 1px solid #333 !important;
-}
 
 .theme-dark .dark-bg {
     background-color: #1f1f1f;
@@ -120,9 +121,7 @@
 .theme-dark .switch {
     background: rgba(255, 255, 255, 0);
     border-radius: 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
 
 }
 
@@ -163,6 +162,11 @@
 .theme-dark .left-side-header .header-left-menu-toggle {
     color: #fff;
 }
+
+.theme-dark .offcanvas .offcanvas-header .btn-close {
+    color: #fff;
+}
+
 
 /* 默认样式 */
 .theme-light {
@@ -239,7 +243,7 @@ input[type="checkbox"] {
 }
 
 #_1st-toggle-btn input[type="checkbox"]:checked+span:before {
-    background-color: rgb(53 53 53);
+    background-color: rgb(42 42 42);
     transform: translate(14px, -8px);
 }
 
