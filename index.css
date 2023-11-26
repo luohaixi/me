@@ -110,6 +110,21 @@
     background-color: #fafafa;
 }
 
+.menu-item:hover {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+}
+
+.nav-item:hover {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+}
+
+.fa:hover {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+}
+
 .bg-6 {
     background-color: #f3f3f3;
 }

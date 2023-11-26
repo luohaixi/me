@@ -300,8 +300,8 @@ input[type="submit"]:hover,
 .woocommerce-page button.button.alt:hover,
 .woocommerce-page input.button.alt:hover,
 #jckqv .button:hover {
-    background: #2A2F35;
-    color: #ffffff;
+    background: rgba(0, 0, 0, 0.05);
+    color: #000;
 }
 
 .btn:active,

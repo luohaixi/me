@@ -96,6 +96,26 @@
     background-color: #292929 !important
 }
 
+.theme-dark .menu-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.theme-dark .btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.theme-dark .nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.theme-dark .fa:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
 .theme-dark .dark-menu-item-card {
     border: 1px solid #333;
     background-color: #292929 !important

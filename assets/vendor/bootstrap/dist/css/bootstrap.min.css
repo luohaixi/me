@@ -732,8 +732,9 @@ progress {
     header.left-side-header .header-left-logo {
         padding: 0px 0 50px;
     }
-    body.enable-left-header .header-left-wrapper{
-        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) ;
+
+    body.enable-left-header .header-left-wrapper {
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
     }
 }
 
@@ -4122,8 +4123,8 @@ fieldset:disabled .btn {
 
 .btn-group {
     padding: .1rem;
-    border-radius: .375rem;
-    /* border: 1px solid #212529; */
+    border-radius: .5rem;
+    border: 1px solid #212529;
 }
 
 .btn-group>.btn-group:not(:first-child),
@@ -4394,7 +4395,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-nav {
-    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-x: 0.5rem;
     --bs-nav-link-padding-y: 0.75rem;
     --bs-nav-link-font-weight: normal;
     --bs-nav-link-color: var(--bs-navbar-color);
@@ -4485,6 +4486,13 @@ fieldset:disabled .btn {
     overflow-y: auto
 }
 
+@media (min-width:375px) {
+    .h-suntitle {
+        font-size: 3em;
+        margin-bottom: 4rem;
+    }
+}
+
 @media (min-width:576px) {
     .navbar-expand-sm {
         flex-wrap: nowrap;
@@ -4493,6 +4501,7 @@ fieldset:disabled .btn {
 
     .h-suntitle {
         font-size: 4em;
+        margin-bottom: 4rem;
     }
 
     .header-title {
@@ -4558,6 +4567,7 @@ fieldset:disabled .btn {
 
     .h-suntitle {
         font-size: 5em;
+        margin-bottom: 5rem;
     }
 
     .header-title {
