@@ -699,9 +699,22 @@ progress {
     .body-expand-sm {
         height: 100vh;
     }
+}
 
+@media (max-width:576px) {
+    .grid-container {
+        .item1 {
+            grid-area: 1 / span 3 / 2 / 4;
+        }
 
+        .item2 {
+            grid-area: 2 / 2 / 2 / 4;
+        }
 
+        .item5 {
+            grid-area: 3 / 2 / 4 / 4;
+        }
+    }
 }
 
 @media (min-width:768px) {
@@ -736,6 +749,8 @@ progress {
     body.enable-left-header .header-left-wrapper {
         border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
     }
+
+
 }
 
 @media (max-width:1024px) {
@@ -746,6 +761,8 @@ progress {
     header.header-left-wrapper {
         padding: 15px;
     }
+
+
 }
 
 @media (min-width:1200px) {
