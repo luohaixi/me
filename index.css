@@ -22,7 +22,6 @@
 
 .elemen-card {
     backdrop-filter: saturate(180%) blur(6px);
-    background: #fff;
     /* border-radius: 0px; */
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: .3s cubic-bezier(.165, .84, .44, 1);
@@ -32,6 +31,13 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 1em;
+    /* background-color: #2196F3; */
+}
+
+.grid-container-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1.25fr 1fr;
+    grid-gap: 0em;
     /* background-color: #2196F3; */
 }
 

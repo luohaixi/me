@@ -118,7 +118,11 @@
 
 .theme-dark .dark-menu-item-card {
     border: 1px solid #333;
-    background-color: #292929 !important
+    /* background-color: #292929 !important */
+}
+
+.theme-dark .header-left-wrapper {
+    box-shadow: inset 0 -1px 0 0 hsl(0, 0%, 20%) !important
 }
 
 .theme-dark .icon-color-6 {
