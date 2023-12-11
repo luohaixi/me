@@ -58,7 +58,12 @@
         href="http://fonts.googleapis.com/css?family=Titillium+Web%3A300%2C400%2C500%26subset%3Dlatin%7CNunito%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%26subset%3Dlatin%7CRoboto%3A300%2C400%2C600%26subset%3Dlatin&amp;ver=1.0"
         type="text/css" media="all" />
 
-
+    <style>
+        .border-less {
+            border-left-width: 0px !important;
+            border-right-width: 0px !important;
+        }
+    </style>
 </head>
 
 
@@ -189,16 +194,22 @@
     </header>
 
     <div class="content-block stick-to-footer">
-        <div class="page-container container">
+        <div class="page-container container" style="padding-top: 96px;">
             <!-- 展示主体 -->
             <div style="min-height: calc(100vh - 159px);">
+                <!-- 展示主体 -->
+                <section class="py-2">
+                    <div class="container">
+                        <div class="header-title pb-3 mx-1 text">Small Projects</div>
+                    </div>
+                </section>
                 <!-- 左右布局 -->
-                <section class="py-5">
-                    <div class="container" style="padding-top: 60px;">
+                <section class="pb-5">
+                    <div class="container">
                         <div class="text-black">
                             <div class="mx-sm-3 d-flex flex-column">
                                 <div class="row gap-0">
-                                    <div class="p-4 col bg-dark-3 dark-border"
+                                    <div class="p-4 col dark-border"
                                         style="border: 1px solid #ebebeb;border-radius: 1em 0 0 1em;height: 10em;">
                                         <div class="text d-flex flex-column">
                                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
@@ -214,8 +225,7 @@
                                             <div class=" mt-5 hero-section"><span class="h5">AI绘画/</span>一些主题的故</div>
                                         </div>
                                     </div>
-                                    <div class="p-4 col bg-dark-3 dark-border"
-                                        style="border: 1px solid #ebebeb; border-left-width:0px; border-right-width:0px">
+                                    <div class="p-4 col dark-border border-less" style="border: 1px solid #ebebeb;">
                                         <div class="text d-flex flex-column">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -236,7 +246,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="p-4 col bg-dark-3 dark-border"
+                                    <div class="p-4 col dark-border"
                                         style="border: 1px solid #ebebeb;border-radius: 0em 1em 1em 0;">
                                         <span class="text d-flex flex-column">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
