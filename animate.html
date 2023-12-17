@@ -76,10 +76,9 @@
     <div class="header-progressbar">
         <div class="header-progressbar-under-bar"></div>
     </div>
-    <header class="left-side-header">
-        <div
-            class="header-left-wrapper header-left-align-left header-color-style-light border-end dark-header dark-border-end">
-            <div class="header-left-logo clearfix">
+    <header class="left-side-header fixed-top">
+        <div class="header-left-wrapper header-left-align-left p-3 dark-header dark-border-end">
+            <div class="header-left-logo clearfix d-flex align-items-center">
                 <a class="logo-link logo-text d-flex align-items-center" href="index.html">
                     <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="60" height="60" rx="10" fill="#F2F2F2" />
@@ -91,16 +90,17 @@
                             fill="#1D1D1F" />
                         <path
                             d="M22.7829 18.6057C21.7115 20.32 21.6304 21.9629 22.4161 24.6057C21.0552 25.3584 17.9048 27.721 20.4762 32.5782L19.5476 33.221C18.7521 32.1245 17.2425 30.2817 15.5686 31.1119C14.4972 27.6119 12.559 19.4628 14.4161 16.32C15.7018 13.2486 20.361 10.0766 26.3543 9.67709C32.7829 9.24852 42.2018 13.1771 40.7733 18.7486C31.9972 18.7486 30.9753 17.9701 26.7018 17.32C24.3543 16.9628 23.2591 17.9866 22.7829 18.6057Z"
-                            fill="url(#paint0_linear_13494_28152)" />
+                            fill="url(#paint0_linear_14100_24201)" />
                         <circle cx="31.1306" cy="30.8914" r="1.85714" fill="#1D1D1F" />
                         <circle cx="30.6437" cy="29.643" r="0.571429" fill="white" />
                         <circle cx="30.6437" cy="29.643" r="0.571429" fill="white" />
                         <circle cx="40.5594" cy="30.4629" r="1.42857" fill="#1D1D1F" />
                         <circle cx="41.1441" cy="29.5723" r="0.357954" fill="white" />
                         <circle cx="41.1441" cy="29.5723" r="0.357954" fill="white" />
-                        <rect x="0.5" y="0.5" width="59" height="59" rx="10" stroke="black" stroke-opacity="0.1" />
+                        <rect x="25" y="25" width="22" height="9" fill="#0066FF" fill-opacity="0.7" />
+                        <rect x="0.5" y="0.5" width="59" height="59" rx="9.5" stroke="black" stroke-opacity="0.1" />
                         <defs>
-                            <linearGradient id="paint0_linear_13494_28152" x1="20.9762" y1="18.9354" x2="20.0476"
+                            <linearGradient id="paint0_linear_14100_24201" x1="20.9762" y1="18.9354" x2="20.0476"
                                 y2="35.7211" gradientUnits="userSpaceOnUse">
                                 <stop stop-color="#1D1D1F" />
                                 <stop offset="0.242831" stop-color="#2C2C2D" stop-opacity="0.61388" />
@@ -110,19 +110,22 @@
                     </svg>
                     <div class="text ms-2">
                         <div style="font-size: 0.6em;font-weight: 600;">Haixi's blog</div>
-                        <div style="font-size: 0.25em;font-weight: 300;">UI Designer</div>
+                        <div style="font-size: 0.4em;font-weight: 300;">UI Designer</div>
                     </div>
-
                 </a>
-
-                <div class="header-left-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="header-left-menu-toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
+
             <div class="header-left-menu-wrapper menu-uppercase menu-font-weight-bold">
                 <div class="menu-header-left-menu-container">
-                    <ul id="menu-header-left-menu" class="header-left-menu">
+                    <ul class="header-left-menu">
                         <li class="menu-item menu-item-home current-menu-item current_page_item">
-                            <a href="index.html" class="btn-text-6"><svg width="19" height="19" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="index.html" class="btn-text-6">
+                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M17.2665 5.64924C19.8688 4.9411 21.8177 5.00414 22.3927 6C23.4282 7.7936 19.6149 11.9339 13.8754 15.2476C8.13587 18.5613 2.64362 19.7936 1.60808 18C1.03322 17.0043 1.95266 15.2854 3.86639 13.3862M20.2504 12C20.2504 16.5563 16.5567 20.25 12.0004 20.25C7.44404 20.25 3.75039 16.5563 3.75039 12C3.75039 7.44365 7.44404 3.75 12.0004 3.75C16.5567 3.75 20.2504 7.44365 20.2504 12Z"
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
@@ -130,23 +133,29 @@
                                 </svg>芝士星球</a>
                         </li>
                         <li class="menu-item"><a href="blog.html" class="btn-text-6">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 20H21" stroke="#212121" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
                                     <path
-                                        d="M16.5 3.49998C16.8978 3.10216 17.4374 2.87866 18 2.87866C18.2786 2.87866 18.5544 2.93353 18.8118 3.04014C19.0692 3.14674 19.303 3.303 19.5 3.49998C19.697 3.69697 19.8532 3.93082 19.9598 4.18819C20.0665 4.44556 20.1213 4.72141 20.1213 4.99998C20.1213 5.27856 20.0665 5.55441 19.9598 5.81178C19.8532 6.06915 19.697 6.303 19.5 6.49998L7 19L3 20L4 16L16.5 3.49998Z"
+                                        d="M9 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V15.3107C3.75 15.2122 3.7694 15.1147 3.80709 15.0237C3.84478 14.9327 3.90003 14.85 3.96967 14.7803L15.2197 3.53034C15.3603 3.38969 15.5511 3.31067 15.75 3.31067C15.9489 3.31067 16.1397 3.38969 16.2803 3.53034L20.4697 7.71968C20.6103 7.86033 20.6893 8.0511 20.6893 8.25001C20.6893 8.44892 20.6103 8.63969 20.4697 8.78034L9 20.25ZM9 20.25H20.25M9 20.25L3.79772 15.0477M12.75 6.00001L18 11.25"
                                         stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>学习沉淀</a></li>
-                        <li class="menu-item"><a href="portfolio.html" class="dark-menu-item text">
-                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none"
+                        <li class="menu-item"><a href="portfolio.html" class="dark-menu-item text-fill">
+                                <svg width="21" height="21" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M15 17.25L18 21M9 17.25L6 21M12 4.5V2.25M3.75 4.5H20.25C20.6642 4.5 21 4.83579 21 5.25V16.5C21 16.9142 20.6642 17.25 20.25 17.25H3.75C3.33579 17.25 3 16.9142 3 16.5V5.25C3 4.83579 3.33579 4.5 3.75 4.5Z"
-                                        stroke="#212121" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>专业设计</a></li>
+                                        d="M13 2.25C13 1.69772 12.5523 1.25 12 1.25C11.4478 1.25 11 1.69772 11 2.25V4H13V2.25Z"
+                                        fill="#212121" />
+                                    <path
+                                        d="M15.1194 18H17.6807L18.7809 19.3753C19.1259 19.8066 19.056 20.4359 18.6247 20.7809C18.1935 21.1259 17.5642 21.056 17.2192 20.6247L15.1194 18Z"
+                                        fill="#212121" />
+                                    <path
+                                        d="M6.31941 18H8.88066L6.78091 20.6247C6.4359 21.056 5.8066 21.1259 5.37534 20.7809C4.94408 20.4359 4.87416 19.8066 5.21917 19.3753L6.31941 18Z"
+                                        fill="#212121" />
+                                    <path
+                                        d="M3 6.99992C3 5.89535 3.89543 4.99992 5 4.99988C6.29482 4.99983 7.58965 4.99974 8.88447 4.99966C12.2565 4.99943 15.6285 4.9992 19.0004 4.99965C20.1048 4.99979 21 5.89516 21 6.99956V14.9997C21 16.1043 20.1044 16.9998 18.9997 16.9996C14.3334 16.9989 9.66707 16.9982 5.00077 16.9994C3.8959 16.9997 3 16.1042 3 14.9993V6.99992Z"
+                                        fill="#212121" />
+                                </svg><b>专业设计</b></a></li>
                         <li class="menu-item"><a href="about.html" class="btn-text-6">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -172,31 +181,32 @@
                                         stroke-linejoin="round" />
                                     <path d="M15 9H15.01" stroke="#212121" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                </svg>关于</a></li>
+                                </svg>
+                                个人说明书</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="social-icons-wrapper  position-absolute bottom-0 d-flex align-items-center">
-                <ul>
+            <div class="social-icons-wrapper header-bottom-menu-toggle-icons d-flex align-items-center block-element">
+                <ul class="block-element">
                     <li>
                         <a href="https://github.com/luohaixi/me" target="_blank" class="a-behance">
-                            <i class="fa fa-github icon-color-6"></i></a>
+                            <i class="fa fa-github icon-color-6 p-2"></i></a>
                     </li>
                     <li>
                         <a href="https://www.pinterest.com/haixiluo/" target="_blank" class="a-pinterest">
-                            <i class="fa fa-pinterest icon-color-6"></i></a>
+                            <i class="fa fa-pinterest icon-color-6 p-2"></i></a>
                     </li>
                     <li>
                         <a href="https://dribbble.com/luohaixi/shots" target="_blank" class="a-dribbble">
-                            <i class="fa fa-dribbble icon-color-6"></i></a>
+                            <i class="fa fa-dribbble icon-color-6 p-2"></i></a>
                     </li>
                 </ul>
-                <section class="switch">
+                <div class="switch block-element">
                     <div class="toggle-btn" id="_1st-toggle-btn">
                         <input id="theme-check-box" type="checkbox" onclick="handleTheme(this)">
                         <span></span>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </header>
