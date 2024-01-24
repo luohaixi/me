@@ -194,6 +194,11 @@
     color: #fff;
 }
 
+.theme-dark .css-1pm3jse {
+    background-image: radial-gradient(#292929 1px, #141414 1px);
+    background-size: 20px 20px;
+}
+
 
 /* 默认样式 */
 .theme-light {

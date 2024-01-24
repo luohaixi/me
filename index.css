@@ -163,3 +163,8 @@
     background: linear-gradient(90deg, #fff 28px, transparent 1%) 50%, linear-gradient(#fff 28px, transparent 1%) 50%, #e6e6e6;
     background-size: 30px 30px;
 }
+
+.css-1pm3jse {
+    background-image: radial-gradient(#dadada 1px, #fff 1px);
+    background-size: 20px 20px;
+}
