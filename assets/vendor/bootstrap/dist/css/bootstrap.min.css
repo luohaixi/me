@@ -4886,7 +4886,7 @@ fieldset:disabled .btn {
     --bs-card-title-spacer-y: 0.5em;
     --bs-card-border-width: 1px;
     --bs-card-border-color: var(--bs-border-color-translucent);
-    --bs-card-border-radius: 1em;
+    --bs-card-border-radius: 0.5em;
     --bs-card-box-shadow: ;
     --bs-card-inner-border-radius: calc(1em - 1px);
     --bs-card-cap-padding-y: 0.5em;
@@ -4895,18 +4895,19 @@ fieldset:disabled .btn {
     --bs-card-cap-color: ;
     --bs-card-height: ;
     --bs-card-color: ;
-    /* --bs-card-bg: #fff; */
+    --bs-card-bg: #fff;
     --bs-card-img-overlay-padding: 1em;
     --bs-card-group-margin: 0.75em;
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     min-width: 0;
     height: var(--bs-card-height);
     word-wrap: break-word;
     background-color: var(--bs-card-bg);
     background-clip: border-box;
-    /* border: var(--bs-card-border-width) solid var(--bs-card-border-color); */
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
     border-radius: var(--bs-card-border-radius)
 }
 
@@ -7775,8 +7776,9 @@ fieldset:disabled .btn {
 }
 
 .text-bg-primary {
-    color: #fff !important;
-    background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important
+    color: #4A5568 !important;
+    background-color: RGBA(248, 248, 248, var(--bs-bg-opacity, 1)) !important;
+    border: 1px solid #E2E8F0;
 }
 
 .text-bg-secondary {

@@ -199,6 +199,11 @@
     background-size: 20px 20px;
 }
 
+.theme-dark .card {
+    background: #1f1f1f;
+    border: var(--bs-card-border-width) solid #333;
+}
+
 
 /* 默认样式 */
 .theme-light {
